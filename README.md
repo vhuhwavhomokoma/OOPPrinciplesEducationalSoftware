@@ -30,5 +30,4 @@
 
 cd frontend/master-oop
 
-2. Once inside Workbench, run the command ng serve --open. This runs the app
-3. Should you get an error relating to a material component or ngx cookie, run the following commands
+1. Once inside Workbench, run the command ng serve --open. This runs the app
