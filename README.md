@@ -20,6 +20,7 @@
 **Installing Angular** <br>
 <p>Angular is needed for the front end</p>
 1. In the command prompt, run the command npm: install -g @angular/cli@latest<br><br>
+2. We are using Anguar 18.2.7
 
 **Installing The rest of the frontend packages and dependencies** <br>
 <p>All our packages and dependencies is really simple.</p>
