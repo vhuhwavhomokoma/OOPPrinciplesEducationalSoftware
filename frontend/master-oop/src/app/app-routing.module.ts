@@ -2,6 +2,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { HomeComponent } from './home/home.component';
+import { AbstractionComponent } from './abstraction/abstraction.component';
+import { ClassObjectUmlComponent } from './class-object-uml/class-object-uml.component';
+import { EncapsulationComponent } from './encapsulation/encapsulation.component';
+import { InheritenceComponent } from './inheritence/inheritence.component';
+import { PolymorphismComponent } from './polymorphism/polymorphism.component';
+import { RelationshipsComponent } from './relationships/relationships.component';
 
 const routes: Routes = [
   {
@@ -13,6 +20,41 @@ const routes: Routes = [
     path:'register',
     component: RegisterComponent,
     title:'Register'
+  },
+  {
+    path:'homePage',
+    component: HomeComponent,
+    title:'Home'
+  },
+  {
+    path:'abstraction',
+    component:AbstractionComponent,
+    title:'Abstraction'
+  },
+  {
+    path:'class_object_uml',
+    component: ClassObjectUmlComponent,
+    title:'Classes,Objects and UML'
+  },
+  {
+    path:'encapsulation',
+    component: EncapsulationComponent,
+    title:'Encapsulation'
+  },
+  {
+    path:'inheritence',
+    component:InheritenceComponent,
+    title:'Inheritence'
+  },
+  {
+    path:'polymorphism',
+    component:PolymorphismComponent,
+    title:'Polymorphism'
+  },
+  {
+    path:'relationships',
+    component:RelationshipsComponent,
+    title:'Relationships'
   }
 ];
 
