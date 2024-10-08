@@ -9,6 +9,7 @@ import { EncapsulationComponent } from './encapsulation/encapsulation.component'
 import { InheritenceComponent } from './inheritence/inheritence.component';
 import { PolymorphismComponent } from './polymorphism/polymorphism.component';
 import { RelationshipsComponent } from './relationships/relationships.component';
+import { ClassesOfflineComponent } from './classes-offline/classes-offline.component';
 
 const routes: Routes = [
   {
@@ -55,6 +56,11 @@ const routes: Routes = [
     path:'relationships',
     component:RelationshipsComponent,
     title:'Relationships'
+  },
+  {
+    path:'classes-offline',
+    component: ClassesOfflineComponent,
+    title:'Offline Activities'
   }
 ];
 

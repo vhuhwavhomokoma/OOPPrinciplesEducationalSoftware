@@ -8,5 +8,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./relationships.component.scss']
 })
 export class RelationshipsComponent {
-
 }
