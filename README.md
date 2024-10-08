@@ -36,8 +36,12 @@
 1. Run the command: npm install <br><br>
 
 **Running the Frontend** <br>
-1.change directories to the "master-oop" subdirectory within the frontend subdirectory. This can be done using the command
-
+1. change directories to the "master-oop" subdirectory within the frontend subdirectory. This can be done using the command
 cd frontend/master-oop
 
-1. Once inside master-oop, run the command ng serve --open. This runs the app
+2. Once inside master-oop, run the command ng serve --open. This runs the app
+
+**Generating a component in Angular**
+
+1. Go into the directory "frontend\master"
+2. run the command: ng generate component <component_name> <br><br>
