@@ -54,6 +54,7 @@ const client = new Client({
             CREATE TABLE IF NOT EXISTS "person" (
                 id SERIAL PRIMARY KEY,
                 email VARCHAR(60),
+                password VARCHAR (60),
                 fname VARCHAR(100),
                 lname VARCHAR(100),
                 age INT,
@@ -68,8 +69,8 @@ const client = new Client({
         `);
 
         await clientNew.query(`
-            INSERT INTO person (email, fname, lname, age, total_points, class_object_uml_points, polymorphism_points, encapsulation_points, inheritence_points, relationship_points, abstraction_points)
-            VALUES ('player@gmail.com', 'player', 'one', 18, 0, 0, 0, 0, 0, 0, 0);
+            INSERT INTO person (email,password,fname, lname, age, total_points, class_object_uml_points, polymorphism_points, encapsulation_points, inheritence_points, relationship_points, abstraction_points)
+            VALUES ('player@gmail.com','Password@123', 'player', 'one', 18, 0, 0, 0, 0, 0, 0, 0);
         `);
 
         const results=await clientNew.query('SELECT * FROM person');
