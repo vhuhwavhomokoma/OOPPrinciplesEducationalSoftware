@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div class="content-container">
+        <h1 class="text-4xl font-bold mt-8 mg-bottom">
+            Activity 1
+        </h1>
+        <div *ngFor="let question of questions; let qIndex = index">
+            <h3>{{ question.text }}</h3>
+            <div *ngFor="let option of question.options; let oIndex = index">
+              <button 
+                [ngClass]="{'correct': question.selectedIndex === oIndex && option.isCorrect, 'incorrect': question.selectedIndex === oIndex && !option.isCorrect}"
+                (click)="selectOption(qIndex, oIndex)"
+                [disabled]="question.selectedIndex !== null">
+                {{ option.text }}
+              </button>
+            </div>
+            <div *ngIf="question.selectedIndex !== null">
+              <p>{{ question.feedbackMessage }}</p>
+            </div>
+            <hr>
+          </div>
+          
+        
+    </div>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,43 @@
+html{
+    background-color: #A5DDA4  !important;
+}
+
+.content-container {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.mg-bottom{
+    margin-bottom: 24px;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.image-matching-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .image-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .image {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .correct-match {
+    color: green;
+    font-size: 24px;
+  }
+  

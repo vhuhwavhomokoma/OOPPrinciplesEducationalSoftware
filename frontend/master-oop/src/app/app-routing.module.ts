@@ -5,9 +5,12 @@ import { ClassObjectUmlComponent } from './class-object-uml/class-object-uml.com
 import { ClassesOfflineComponent } from './classes-offline/classes-offline.component';
 import { EncapsulationComponent } from './encapsulation/encapsulation.component';
 import { HomeComponent } from './home/home.component';
+import { InheritanceActivity3Component } from './inheritance-activity3/inheritance-activity3.component';
 import { Inheritance2Component } from './inheritance2/inheritance2.component';
 import { Inheritance3Component } from './inheritance3/inheritance3.component';
 import { InheritenceComponent } from './inheritence/inheritence.component';
+import { InhertitanceActivity1Component } from './inhertitance-activity1/inhertitance-activity1.component';
+import { InhertitanceActivity2Component } from './inhertitance-activity2/inhertitance-activity2.component';
 import { LoginComponent } from './login/login.component';
 import { PolymorphismComponent } from './polymorphism/polymorphism.component';
 import { RegisterComponent } from './register/register.component';
@@ -47,17 +50,32 @@ const routes: Routes = [
   {
     path:'inheritence',
     component:InheritenceComponent,
-    title:'Inheritence'
+    title:'Inheritance'
   },
   {
     path:'inheritence2',
     component:Inheritance2Component,
-    title:'Inheritence'
+    title:'Inheritance'
   },
   {
     path:'inheritence3',
     component:Inheritance3Component,
-    title:'Inheritence'
+    title:'Inheritance'
+  },
+  {
+    path:'inheritenceActivity1',
+    component:InhertitanceActivity1Component,
+    title:'Inheritance'
+  },
+  {
+    path:'inheritenceActivity2',
+    component:InhertitanceActivity2Component,
+    title:'Inheritance'
+  },
+  {
+    path:'inheritenceActivity3',
+    component: InheritanceActivity3Component,
+    title:'Inheritance'
   },
   {
     path:'polymorphism',

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div class="content-container">
+        <h1 class="text-4xl font-bold mt-8 mg-bottom">
+            Activity 2
+        </h1>
+
+        <div *ngFor="let imageType of imageTypes" class="image-container">
+            <img [src]="imageType.imageUrl" alt="Image" class="image" />
+            <div>
+              <select (change)="onSelectType(imageType.imageUrl, $event)">
+                <option value="" disabled selected>Select type</option>
+                <option *ngFor="let type of ['Single', 'Multiple', 'Multilevel','Hybrid','Hierarchical']" [value]="type">{{ type }}</option>
+              </select>
+            </div>
+            <div *ngIf="isCorrectMatch(imageType.imageUrl)" class="correct-match">✔️</div>
+            <br>
+          </div>
+          
+
+        
+    </div>
+</body>
+</html>
