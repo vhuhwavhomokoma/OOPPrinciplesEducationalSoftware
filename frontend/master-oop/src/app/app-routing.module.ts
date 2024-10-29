@@ -10,6 +10,7 @@ import { InheritenceComponent } from './inheritence/inheritence.component';
 import { PolymorphismComponent } from './polymorphism/polymorphism.component';
 import { RelationshipsComponent } from './relationships/relationships.component';
 import { ClassesOfflineComponent } from './classes-offline/classes-offline.component';
+import { ClassesOnlineGame2Component } from './classes-online-game2/classes-online-game2.component';
 
 const routes: Routes = [
   {
@@ -58,9 +59,14 @@ const routes: Routes = [
     title:'Relationships'
   },
   {
-    path:'classes-offline',
+    path:'classes_offline',
     component: ClassesOfflineComponent,
     title:'Offline Activities'
+  },
+  {
+    path:'classes_online_game2',
+    component: ClassesOnlineGame2Component,
+    title:'classes game2'
   }
 ];
 
