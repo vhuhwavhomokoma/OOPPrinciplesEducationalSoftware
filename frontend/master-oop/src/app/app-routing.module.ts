@@ -11,6 +11,7 @@ import { PolymorphismComponent } from './polymorphism/polymorphism.component';
 import { RelationshipsComponent } from './relationships/relationships.component';
 import { ClassesOfflineComponent } from './classes-offline/classes-offline.component';
 import { ClassesOnlineGame2Component } from './classes-online-game2/classes-online-game2.component';
+import { ClassesOnlineGame1Component } from './classes-online-game1/classes-online-game1.component';
 
 const routes: Routes = [
   {
@@ -66,7 +67,12 @@ const routes: Routes = [
   {
     path:'classes_online_game2',
     component: ClassesOnlineGame2Component,
-    title:'classes game2'
+    title:'Classes, Objects and UML game 1'
+  },
+  {
+    path:'classes_online_game1',
+    component: ClassesOnlineGame1Component,
+    title:'Classes, Objects and UML game 2'
   }
 ];
 
