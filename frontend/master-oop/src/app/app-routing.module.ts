@@ -74,7 +74,7 @@ const routes: Routes = [
   },
   {
     path:'inheritenceActivity3',
-    component: InheritanceActivity3Component,
+    component:InheritanceActivity3Component,
     title:'Inheritance'
   },
   {

@@ -46,6 +46,7 @@ export class InhertitanceActivity2Component {
   isCorrectMatch(imageUrl: string) {
     return this.correctMatches.has(imageUrl);
   }
+  
 
 
 }

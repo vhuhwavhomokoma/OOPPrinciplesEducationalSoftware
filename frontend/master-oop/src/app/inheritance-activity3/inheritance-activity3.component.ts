@@ -1,11 +1,11 @@
-import { DragDropModule } from '@angular/cdk/drag-drop';
+import { CdkDrag } from '@angular/cdk/drag-drop';
 import { Component } from '@angular/core';
 
 
 @Component({
   selector: 'app-inheritance-activity3',
   standalone: true,
-  imports: [DragDropModule],
+  imports: [CdkDrag],
   templateUrl: './inheritance-activity3.component.html',
   styleUrls: ['./inheritance-activity3.component.scss']
 })

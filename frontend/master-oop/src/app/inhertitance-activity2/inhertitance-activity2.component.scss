@@ -29,6 +29,11 @@ html{
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
   }
   
   .image {
@@ -41,3 +46,8 @@ html{
     font-size: 24px;
   }
   
+.incorrect-match {
+  color: red;
+  font-size: 20px;
+  display: none;
+}

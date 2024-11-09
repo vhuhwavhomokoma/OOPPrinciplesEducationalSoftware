@@ -27,7 +27,7 @@ export class InhertitanceActivity1Component {
       text: 'What is inheritance?',
       options: [
         { text: 'A. Inheritance is the process of creating a new class by copying the code from another class.', isCorrect: false },
-        { text: 'B. Inheritance is the technique of defining a class in which all the methods are static and belong to the class rather than an instance.', isCorrect: false },
+        { text: 'B. Inheritance is the technique of defining a class in which all the methods are static.', isCorrect: false },
         { text: 'C. Inheritance is a mechanism that allows one class to inherit properties and behaviors from another class.', isCorrect: true },
         { text: 'D. Inheritance refers to the act of defining functions outside of a class but using them inside the class.', isCorrect: false }
       ],
@@ -61,7 +61,7 @@ export class InhertitanceActivity1Component {
   selectOption(questionIndex: number, optionIndex: number) {
     const question = this.questions[questionIndex];
     question.selectedIndex = optionIndex;
-    question.feedbackMessage = question.options[optionIndex].isCorrect ? 'Correct!' : 'Try again.';
+    question.feedbackMessage = question.options[optionIndex].isCorrect ? 'Correct!' : 'Incorrect.';
   }
   
 }
