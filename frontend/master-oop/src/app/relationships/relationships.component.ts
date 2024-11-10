@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   templateUrl: './relationships.component.html',
   styleUrls: ['./relationships.component.scss']
 })
+
 export class RelationshipsComponent {
 }
+
+
