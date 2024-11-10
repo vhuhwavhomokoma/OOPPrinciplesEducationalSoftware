@@ -12,6 +12,7 @@ import { RelationshipsComponent } from './relationships/relationships.component'
 import { ClassesOfflineComponent } from './classes-offline/classes-offline.component';
 import { ClassesOnlineGame2Component } from './classes-online-game2/classes-online-game2.component';
 import { ClassesOnlineGame1Component } from './classes-online-game1/classes-online-game1.component';
+import { ObjectsComponent } from './objects/objects.component';
 
 const routes: Routes = [
   {
@@ -37,7 +38,7 @@ const routes: Routes = [
   {
     path:'class_object_uml',
     component: ClassObjectUmlComponent,
-    title:'Classes,Objects and UML'
+    title:'Class Content'
   },
   {
     path:'encapsulation',
@@ -67,12 +68,17 @@ const routes: Routes = [
   {
     path:'classes_online_game2',
     component: ClassesOnlineGame2Component,
-    title:'Classes, Objects and UML game 1'
+    title:'Objects Game 2'
   },
   {
     path:'classes_online_game1',
     component: ClassesOnlineGame1Component,
-    title:'Classes, Objects and UML game 2'
+    title:'Classes Game 1'
+  },
+  {
+    path:'objects',
+    component:ObjectsComponent,
+    title:'Objects'
   }
 ];
 

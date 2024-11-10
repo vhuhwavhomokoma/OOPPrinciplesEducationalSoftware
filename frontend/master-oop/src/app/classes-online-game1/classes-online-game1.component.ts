@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-classes-online-game1',
@@ -17,6 +18,8 @@ export class ClassesOnlineGame1Component {
   answers:string [] = [];
   points = 0;
 
+  constructor(private router:Router){}
+
   selectedAnswerQuestion1:string = '';
   selectedAnswerQuestion2:string = '';
   selectedAnswerQuestion3:string = '';
@@ -28,6 +31,7 @@ export class ClassesOnlineGame1Component {
   
 
   mark(){
+    this.points = 0;
 
     this.answers.push(this.selectedAnswerQuestion1);
     this.answers.push(this.selectedAnswerQuestion2);
@@ -46,12 +50,11 @@ export class ClassesOnlineGame1Component {
 
     this.showNextButton = true;
 
-
     //Reset the answers
     this.answers = [];
   }
 
   next(){
-
+    this.router.navigate(['/objects']); 
   }
 }
