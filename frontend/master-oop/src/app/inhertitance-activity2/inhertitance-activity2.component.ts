@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-
+import { Router } from '@angular/router';
 interface ImageType {
   imageUrl: string;
   type: string;
@@ -47,6 +47,11 @@ export class InhertitanceActivity2Component {
     return this.correctMatches.has(imageUrl);
   }
   
+  
+  constructor(private router:Router){}
+  next(){
+    this.router.navigate(['/inheritence3']);
+  }
 
 
 }

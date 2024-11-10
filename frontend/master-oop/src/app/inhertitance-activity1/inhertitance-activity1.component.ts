@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 interface Option {
   text: string;
@@ -53,7 +54,7 @@ export class InhertitanceActivity1Component {
         { text: 'C. Inheritance is a type of data structure', isCorrect: false },
         { text: 'D. Inheritance is one of the core principles of Object-Oriented Programming (OOP)', isCorrect: true }
       ],
-      selectedIndex: null,  // Initialize as null
+      selectedIndex: null,  
       feedbackMessage: ''
     }
   ];
@@ -62,6 +63,11 @@ export class InhertitanceActivity1Component {
     const question = this.questions[questionIndex];
     question.selectedIndex = optionIndex;
     question.feedbackMessage = question.options[optionIndex].isCorrect ? 'Correct!' : 'Incorrect.';
+  }
+
+  constructor(private router:Router){}
+  next(){
+    this.router.navigate(['/inheritence2']);
   }
   
 }

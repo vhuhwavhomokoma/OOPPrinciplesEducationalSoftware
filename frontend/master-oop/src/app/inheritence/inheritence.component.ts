@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-inheritence',
   standalone: true,
@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./inheritence.component.scss']
 })
 export class InheritenceComponent {
-
+  constructor(private router:Router){}
+  next(){
+    this.router.navigate(['/inheritenceActivity1']);
+  }
 }
