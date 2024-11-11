@@ -23,7 +23,7 @@ const routes: Routes = [
     title:'Register'
   },
   {
-    path:'homePage',
+    path:'home',
     component: HomeComponent,
     title:'Home'
   },
