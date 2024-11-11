@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div class="content-container">
+        <h1 class="text-4xl font-bold mt-8 mg-bottom-48">
+            Classification Challenge
+        </h1>
+
+
+        <p class="poppins-medium mg-bottom">Select whether the description is appropriate for a Class or Object</p>
+        
+        <div class="mg-bottom-16 div-radio-label">
+            <label class="poppins-regular" style="margin-right: 6px;">i. A template or blueprint</label>
+            <select [(ngModel)]="selectedAnswerQuestion1" id = "id_ans_1" class="select select-bordered w-full max-w-[150px]">
+                <option value = "c">Class</option> 
+                <option value = "o">Object</option> 
+            </select>
+        </div>
+
+        <div class="mg-bottom-16 div-radio-label">
+            <label class="poppins-regular" style="margin-right: 6px;">ii. Contains attribute values</label>
+            <select [(ngModel)]="selectedAnswerQuestion2" id = "id_ans_2" class="select select-bordered w-full max-w-[150px]">
+                <option value = "c">Class</option> 
+                <option value = "o">Object</option>
+            </select>
+        </div>
+
+        <div class="mg-bottom-16 div-radio-label">
+            <label class="poppins-regular" style="margin-right: 6px;">iii. Attributes are defined</label>
+            <select [(ngModel)]="selectedAnswerQuestion3" id = "id_ans_3" class="select select-bordered w-full max-w-[150px]">
+                <option value = "c">Class</option> 
+                <option value = "o">Object</option>
+            </select>
+        </div>
+
+        <div class="mg-bottom-16 div-radio-label">
+            <label class="poppins-regular" style="margin-right: 6px;">iv. State is relevant</label>
+            <select [(ngModel)]="selectedAnswerQuestion4" id = "id_ans_4" class="select select-bordered w-full max-w-[150px]">
+                <option value = "c">Class</option> 
+                <option value = "o">Object</option>
+            </select>
+        </div>
+
+        <div class="mg-bottom-16 div-radio-label">
+            <label class="poppins-regular" style="margin-right: 6px;">v. An instance</label>
+            <select [(ngModel)]="selectedAnswerQuestion5" id = "id_ans_5" class="select select-bordered w-full max-w-[150px]">
+                <option value = "c">Class</option> 
+                <option value = "o">Object</option>
+            </select>
+        </div>
+
+        <div class="mg-bottom-16 div-radio-label">
+            <label class="poppins-regular" style="margin-right: 6px;">vi. Attributes and Methods are determined</label>
+            <select [(ngModel)]="selectedAnswerQuestion6" id = "id_ans_6" class="select select-bordered w-full max-w-[150px]">
+                <option value = "c">Class</option> 
+                <option value = "o">Object</option>
+            </select>
+        </div>
+
+        <div class="mg-bottom-16 div-radio-label">
+            <label class="poppins-regular" style="margin-right: 6px;">vii. Specialized unit</label>
+            <select [(ngModel)]="selectedAnswerQuestion7" id = "id_ans_7" class="select select-bordered w-full max-w-[150px]">
+                <option value = "c">Class</option> 
+                <option value = "o">Object</option>
+            </select>
+        </div>
+
+        <div class="mg-bottom-16 div-radio-label">
+            <label class="poppins-regular" style="margin-right: 6px;">viii. Distinguishes items</label>
+            <select [(ngModel)]="selectedAnswerQuestion8" id = "id_ans_8" class="select select-bordered w-full max-w-[150px]">
+                <option value = "c">Class</option> 
+                <option value = "o">Object</option>
+            </select>
+        </div>
+
+
+        <button class="btn btn-success mg-bottom" (click) = "mark()">Mark</button>
+        <label class="label-mark poppins-regular">Points: {{points}}</label>
+        <button *ngIf="showNextButton" 
+            class="btn bg-orange-500 text-black hover:bg-orange-600 border-orange-500 hover:border-orange-600 focus:outline-none mg-bottom" (click)="next()">
+            next
+        </button>
+
+
+
+
+        
+    </div>
+</body>
+</html>

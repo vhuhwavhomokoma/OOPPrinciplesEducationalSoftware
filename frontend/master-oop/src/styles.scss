@@ -1,3 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.content-container {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.mg-bottom{
+    margin-bottom: 24px;
+}
+
+.mg-bottom-32{
+    margin-bottom: 32px;
+}
+
+.mg-bottom-48{
+    margin-bottom: 32px;
+}
+
+.mg-bottom-4{
+    margin-bottom: 4px;
+}
+
+.mg-bottom-16{
+    margin-bottom: 16px;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.div-radio-label{
+    display: flex; 
+    align-items: center;
+}
+
+.label-mark{
+    margin-left: 16px;
+    margin-right: 16px;
+}

@@ -11,4 +11,9 @@ import { Router } from '@angular/router';
 })
 export class ClassObjectUmlComponent {
 
+  constructor(private router:Router){}
+
+  next(){
+    this.router.navigate(['/classes_online_game1']);
+  }
 }
