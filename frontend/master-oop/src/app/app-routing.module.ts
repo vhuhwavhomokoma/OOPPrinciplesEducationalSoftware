@@ -13,6 +13,7 @@ import { ClassesOfflineComponent } from './classes-offline/classes-offline.compo
 import { ClassesOnlineGame2Component } from './classes-online-game2/classes-online-game2.component';
 import { ClassesOnlineGame1Component } from './classes-online-game1/classes-online-game1.component';
 import { ObjectsComponent } from './objects/objects.component';
+import { DiagramsComponent } from './diagrams/diagrams.component';
 
 const routes: Routes = [
   {
@@ -79,6 +80,11 @@ const routes: Routes = [
     path:'objects',
     component:ObjectsComponent,
     title:'Objects'
+  },
+  {
+    path:'diagrams',
+    component:DiagramsComponent,
+    title:'Diagrams'
   }
 ];
 
