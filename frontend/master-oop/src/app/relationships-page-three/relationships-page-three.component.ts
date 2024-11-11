@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './relationships-page-three.component.html',
-  styleUrl: './relationships-page-three.component.scss'
+  styleUrls: ['./relationships-page-three.component.scss']
 })
 export class RelationshipsPageThreeComponent {
 

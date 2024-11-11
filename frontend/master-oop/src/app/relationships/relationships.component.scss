@@ -18,7 +18,7 @@ $text-light: black;
   border-radius: 1rem;
   padding: 2rem;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 900px;
+  max-width: 1400px;
   width: 100%;
 }
 
@@ -184,13 +184,11 @@ strong {
 }
 
 
-
 .button-group {
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
 }
-
 
 button {
   background-color: $secondary-color;

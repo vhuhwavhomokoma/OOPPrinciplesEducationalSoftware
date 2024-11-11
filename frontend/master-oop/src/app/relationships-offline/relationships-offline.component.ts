@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './relationships-offline.component.html',
-  styleUrl: './relationships-offline.component.scss'
+  styleUrls: ['./relationships-offline.component.scss']
 })
 export class RelationshipsOfflineComponent {
 
