@@ -27,7 +27,7 @@ export class InheritanceActivity3Component {
 
   mammals = ["lion","elephant"]
   birds = ["owl","chicken"]
-  reptile = ["turtle"]
+  reptile = ["turtle","crocodile"]
 
 
   
@@ -41,7 +41,7 @@ export class InheritanceActivity3Component {
 
   isChildMatching1(): boolean {
     this.inputChild1 = this.inputChild1.toLowerCase();
-    if(this.inputText.toLowerCase() === 'bird'){
+    if(this.inputChild1.toLowerCase() === 'bird'){
       return true;
     }
     return false;
