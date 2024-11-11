@@ -1,0 +1,41 @@
+html{
+    background-color: #A5DDA4  !important;
+}
+
+.content-container {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: ghostwhite;
+}
+
+.mg-bottom{
+    margin-bottom: 24px;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    background-color: grey;
+  }
+  
+  .correct {
+    background-color: green;
+    color: white;
+  }
+  
+  .incorrect {
+    background-color: red;
+    color: white;
+  }
+  

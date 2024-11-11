@@ -1,1 +1,46 @@
-<p>inheritence works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div class="content-container">
+        <h1 class="text-4xl font-bold mt-8 mg-bottom">
+            Inheritance
+        </h1>
+
+        <p class="poppins-medium mg-bottom"> Inheritance is one of the core principles of Object-Oriented Programming (OOP). Inheritance is a mechanism that allows one class (called a child class or subclass) to inherit properties and behaviors (i.e., attributes and methods) from another class (called a parent class or superclass).
+           
+        </p>
+
+        
+        <div class="grid grid-cols-2 gap-5">
+            <div>
+                <img src="../../assets/child_parent.jpg" style="width: 470px; height: 418px;">
+            </div>
+            <div class="grid grid-cols-1 gap-5">
+                <p class="poppins-medium mg-bottom" style="margin-top: 40px; margin-bottom: 130px;">
+                    The class whose properties and behaviours are inherited is referred to as the Parent class/Super class.
+                </p>
+                <p class="poppins-medium mg-bottom">
+                    The class that inherits the properties and behaviours is referred to as the Child class/subclass.
+                </p>
+            </div>
+
+        </div>
+        <br>
+        
+        <ul class="list-disc">
+            <li class="poppins-medium mg-bottom"><b>The child class (or subclass) </b>inherits attributes and methods from the <b>parent class (or superclass)</b>. This means that the child class can use all the functionality of the parent class, while also extending or modifying it to meet its specific needs.</li>
+            <li class="poppins-medium mg-bottom"><b>Method Overriding </b> can be used to redefine a method in the child class that is inherited from the parent class, allowing for behaviour that meets the child class' specific needs</li>
+            <li class="poppins-medium mg-bottom">Inheritance encourages <b>reusability</b>, meaning you don't need to rewrite code for common features.</li>
+        </ul>
+        
+        <button class="btn 0 text-black hover:bg-orange-600 border-orange-500 hover:border-orange-600 focus:outline-none mg-bottom" (click)="next()">
+            Next
+        </button>
+
+
+    </div>
+</body>
+</html>

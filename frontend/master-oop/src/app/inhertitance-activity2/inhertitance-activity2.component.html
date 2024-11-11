@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div class="content-container">
+        <h1 class="text-4xl font-bold mt-8 mg-bottom">
+            Activity 2
+        </h1>
+        <h4>Select the correct type of inheritance for each inheritance diagram</h4>
+
+        <div *ngFor="let imageType of imageTypes" class="image-container">
+            <img [src]="imageType.imageUrl" alt="Image" class="image" /> 
+            <div>
+              <select (change)="onSelectType(imageType.imageUrl, $event)">
+                <option value="" disabled selected>Select type</option>
+                <option *ngFor="let type of ['Single', 'Multiple', 'Multilevel','Hybrid','Hierarchical']" [value]="type">{{ type }}</option>
+              </select>
+            </div>
+            <hr>
+            <div *ngIf="isCorrectMatch(imageType.imageUrl)" class="correct-match">✔️</div>
+
+          </div>
+          
+          <button class="btn 0 text-black hover:bg-orange-600 border-orange-500 hover:border-orange-600 focus:outline-none mg-bottom" (click)="next()">
+            Next
+        </button>
+        
+    </div>
+</body>
+</html>

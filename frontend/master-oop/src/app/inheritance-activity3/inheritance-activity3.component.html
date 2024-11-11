@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+  <h1 class="text-4xl font-bold mt-8 mg-bottom">Activity 3</h1>
+  <h3>Use the images to fill in the correct parent and child classes for inheritance in alphabetical order from left to right in terms of animal classification</h3>
+<div class="content-container">
+<div class="example-box">
+    <img src="../../assets/lion.png" style="width: 40px; height: 48px;">
+    <img src="../../assets/elephant.png" style="width: 40px; height: 48px;">
+    <img src="../../assets/owl.png" style="width: 40px; height: 48px;">
+    <img src="../../assets/turtle.png" style="width: 40px; height: 48px;">
+    <img src="../../assets/crocodile.png" style="width: 40px; height: 48px;">
+</div>
+  
+  
+  <div class="container" style="overflow-x: auto;">
+    <div [ngStyle]="{ 'background-color': isParentMatching() ? 'green' : 'silver' }" class="parent"> 
+      <input type="text" [(ngModel)]="inputText" placeholder="Enter Parent Name"/></div>
+    <div class="children" >
+      <div [ngStyle]="{ 'background-color':  isChildMatching1() ? 'green' : 'silver' }" class="child"> 
+        <input type="text" [(ngModel)]="inputChild1" placeholder="Enter 2nd Tier Child Name"/>
+      </div>
+      <div [ngStyle]="{ 'background-color':  isChildMatching2() ? 'green' : 'silver' }" class="child"> 
+        <input type="text" [(ngModel)]="inputChild2" placeholder="Enter 2nd Tier Child Name"/>
+      </div>
+      <div [ngStyle]="{ 'background-color':  isChildMatching3() ? 'green' : 'silver' }" class="child"> 
+        <input type="text" [(ngModel)]="inputChild3" placeholder="Enter 2nd Tier Child Name"/>
+      </div>
+    </div>
+    <div class="children">
+      <div [ngStyle]="{ 'background-color':  isChildMatching5() ? 'green' : 'silver' }" class="child"> 
+        <input type="text" [(ngModel)]="inputChild5" placeholder="Enter 3nd Tier Child Name"/>
+      </div>
+      <div [ngStyle]="{ 'background-color':  isChildMatching6() ? 'green' : 'silver' }" class="child"> 
+        <input type="text" [(ngModel)]="inputChild6" placeholder="Enter 3nd Tier Child Name"/>
+      </div>
+      <div [ngStyle]="{ 'background-color':  isChildMatching7() ? 'green' : 'silver' }" class="child"> 
+        <input type="text" [(ngModel)]="inputChild7" placeholder="Enter 3nd Tier Child Name"/>
+      </div>
+      <div [ngStyle]="{ 'background-color':  isChildMatching8() ? 'green' : 'silver' }" class="child">
+        <input type="text" [(ngModel)]="inputChild8" placeholder="Enter 3nd Tier Child Name"/>  
+      </div>
+      <div [ngStyle]="{ 'background-color':  isChildMatching9() ? 'green' : 'silver' }" class="child">
+        <input type="text" [(ngModel)]="inputChild9" placeholder="Enter 3nd Tier Child Name"/>  
+      </div>
+    </div>
+  
+  </div>
+  
+</div>
+
+<button class="btn 0 text-black hover:bg-orange-600 border-orange-500 hover:border-orange-600 focus:outline-none mg-bottom" (click)="next()">
+  Next
+</button>
+</body>
+</html>
+
+
+  
