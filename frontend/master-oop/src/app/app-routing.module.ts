@@ -6,6 +6,7 @@ import { ClassesOfflineComponent } from './classes-offline/classes-offline.compo
 import { EncapsulationComponent } from './encapsulation/encapsulation.component';
 import { HomeComponent } from './home/home.component';
 import { InheritanceActivity3Component } from './inheritance-activity3/inheritance-activity3.component';
+import { InheritanceOfflineComponent } from './inheritance-offline/inheritance-offline.component';
 import { Inheritance2Component } from './inheritance2/inheritance2.component';
 import { Inheritance3Component } from './inheritance3/inheritance3.component';
 import { InheritenceComponent } from './inheritence/inheritence.component';
@@ -75,6 +76,11 @@ const routes: Routes = [
   {
     path:'inheritenceActivity3',
     component:InheritanceActivity3Component,
+    title:'Inheritance'
+  },
+  {
+    path:'inheritenceOfflineActivity',
+    component:InheritanceOfflineComponent,
     title:'Inheritance'
   },
   {

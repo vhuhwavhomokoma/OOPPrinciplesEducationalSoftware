@@ -2,6 +2,7 @@ import { CdkDrag, CdkDropList } from '@angular/cdk/drag-drop';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 
 
@@ -29,7 +30,10 @@ export class InheritanceActivity3Component {
   birds = ["owl","chicken"]
   reptile = ["turtle","crocodile"]
 
-
+  constructor(private router:Router){}
+  next(){
+    this.router.navigate(['/inheritenceOfflineActivity']);
+  }
   
   isParentMatching(): boolean {
     if(this.inputText.toLowerCase() === 'animal'){
