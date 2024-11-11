@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polymorphism Applications</title>
+  <style>
+    /* General Page Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #D2A039;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Main Container */
+    .container {
+      width: 750px; /* Increased width */
+      max-width: 90vw; /* Responsive for smaller screens */
+      background-color: #FFF2CC;
+      padding: 20px 30px; /* Adjusted padding */
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border: 4px solid #D27828;
+      font-family: Arial, sans-serif;
+      overflow-y: auto; /* Adds scroll for overflow content */
+      max-height: 90vh; /* Prevents vertical overflow */
+    }
+
+    /* Title */
+    .title {
+      font-size: 24px; /* Adjusted font size */
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    /* Description Text */
+    .description {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #333;
+      margin: 15px 0;
+    }
+
+    /* Application List */
+    .application-list {
+      margin-top: 10px;
+    }
+
+    .application-item {
+      margin-bottom: 12px;
+    }
+
+    .application-item strong {
+      font-weight: bold;
+    }
+
+    .application-item ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-top: 5px;
+    }
+
+    /* Button Styles */
+    .buttons {
+      margin-top: 15px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .button {
+      padding: 8px 16px;
+      background-color: #D27828;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #b25a20;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Title -->
+  <div class="title">Application</div>
+
+  <!-- Description -->
+  <div class="description">
+    Polymorphism has several practical applications in object-oriented programming, enhancing flexibility, scalability, and maintainability of code. Here are some key applications:
+  </div>
+
+  <!-- Application List -->
+  <div class="application-list">
+    <div class="application-item">
+      <strong>1. Reusing Code:</strong>
+      <ul>
+        <li><strong>Application:</strong> You can write general code once and use it in different ways without repeating yourself.</li>
+        <li><strong>Example:</strong> You have a <em>Vehicle</em> class, and different vehicles like <em>Car</em>, <em>Bike</em>, and <em>Bus</em> can use the same function, like <em>start()</em>, but each vehicle starts in its own way.</li>
+      </ul>
+    </div>
+
+    <div class="application-item">
+      <strong>2. Multiple Versions of a Function (Static Polymorphism):</strong>
+      <ul>
+        <li><strong>Application:</strong> You can have multiple functions with the same name, but each does slightly different things based on the input.</li>
+        <li><strong>Example:</strong> A function <em>add()</em> can add two numbers, or it can also join two words (like adding "Hello" and "World").</li>
+      </ul>
+    </div>
+
+    <div class="application-item">
+      <strong>3. Overriding Functions (Dynamic Polymorphism):</strong>
+      <ul>
+        <li><strong>Application:</strong> Different classes can have the same function name, but each class can change how that function works.</li>
+        <li><strong>Example:</strong> A bird class has a <em>fly()</em> method, but different birds, like <em>Sparrow</em> and <em>Eagle</em>, can fly in their own unique way.</li>
+      </ul>
+    </div>
+
+    <div class="application-item">
+      <strong>4. Using Interfaces:</strong>
+      <ul>
+        <li><strong>Application:</strong> Different things can follow the same set of rules (interface) but behave differently.</li>
+        <li><strong>Example:</strong> You might have an interface called <em>Payment</em>, and different payment methods, like <em>CreditCard</em> and <em>PayPal</em>, all follow the same rule (e.g., <em>processPayment()</em>) but each processes the payment differently.</li>
+      </ul>
+    </div>
+
+    <div class="application-item">
+      <strong>5. Choosing Actions at Runtime:</strong>
+      <ul>
+        <li><strong>Application:</strong> The program can decide which version of a function to use when it’s running.</li>
+        <li><strong>Example:</strong> In a video game, when a character attacks, the type of attack (sword, arrow, or magic) is chosen based on the type of character, even though all characters use an <em>attack()</em> function.</li>
+      </ul>
+    </div>
+
+    <div class="application-item">
+      <strong>6. Making Code Simpler and Easier to Update:</strong>
+      <ul>
+        <li><strong>Application:</strong> Polymorphism helps to make your code easy to change without needing to rewrite everything.</li>
+        <li><strong>Example:</strong> If you add a new kind of Vehicle like <em>Boat</em>, you just need to add a <em>start()</em> function for it, and the rest of the system won’t need changes.</li>
+      </ul>
+    </div>
+
+    <div class="application-item">
+      <strong>7. Keeping Things Flexible:</strong>
+      <ul>
+        <li><strong>Application:</strong> Polymorphism lets different parts of your program work together easily and allows for future changes.</li>
+        <li><strong>Example:</strong> If you write a program that handles <em>Animals</em>, you can add new types of animals later (like <em>Fish</em>) without needing to change how the program works overall.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Navigation Buttons -->
+  <div class="buttons">
+    <button class="button">Back</button>
+    <button class="button">Next</button>
+  </div>
+</div>
+
+</body>
+</html>

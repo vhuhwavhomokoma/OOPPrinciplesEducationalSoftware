@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffd966;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: #d71e1e;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.draggable {
+    background-color: #f4b400;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: grab;
+    font-weight: bold;
+}
+
+.definitions {
+    background-color: #d4e157;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.definition {
+    width: 70%;
+    text-align: left;
+    font-weight: bold;
+}
+
+.dropzone {
+    width: 25%;
+    height: 40px;
+    background-color: #e1f5fe;
+    border: 2px dashed #0288d1;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
