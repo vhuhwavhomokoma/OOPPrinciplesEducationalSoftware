@@ -1,0 +1,136 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:host {
+    background-color: #D2A039;
+    display: block; /* Ensure it covers the component area */
+    min-height: 100vh; /* Optional, to cover the full viewport height */
+}
+
+
+
+/* Main Container with Border */
+.container {
+    width: 800px;
+    background-color: #FFF2CC;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    border: 4px solid #D27828;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Header and Text Sections */
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.example-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Example Section */
+.example-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.person img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.person-title {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.labels {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+/* Label Styles and Arrow Effect */
+.label {
+    background-color: #D9AB65;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #333;
+    width: fit-content;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin-left: 30px;
+}
+
+/* Arrow */
+.label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%);
+    border: 10px solid transparent;
+    border-right: 10px solid #D9AB65;
+}
+
+/* Button Styles */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #D27828;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #b25a20;
+}

@@ -25,6 +25,10 @@ import { PolymorphismActivityTwoComponent } from './polymorphism-activity-two/po
 import { PolymorphismActivityThreeComponent } from './polymorphism-activity-three/polymorphism-activity-three.component';
 import { PolymorphismDragDropGameComponent } from './polymorphism-drag-drop-game/polymorphism-drag-drop-game.component';
 
+import { RelationshipsPageTwoComponent} from './relationships-page-two/relationships-page-two.component';
+import { RelationshipsPageThreeComponent } from './relationships-page-three/relationships-page-three.component';
+import { RelationshipsOnlineComponent } from './relationships-online/relationships-online.component';
+import { RelationshipsOfflineComponent } from './relationships-offline/relationships-offline.component';
 
 const routes: Routes = [
   {
@@ -151,7 +155,31 @@ const routes: Routes = [
     path:'diagrams',
     component:DiagramsComponent,
     title:'Diagrams'
-  }
+  },
+
+{
+  path:'relationships-page-two',
+  component: RelationshipsPageTwoComponent,
+  title:'Relationships PageTwo',
+},
+
+{
+ path:'relationships-page-three',
+ component: RelationshipsPageThreeComponent,
+ title:'Relationships PageThree',
+},
+{
+ path:'relationships-online',
+ component: RelationshipsOnlineComponent,
+ title:'Relationships Online Activity',
+},
+
+{
+ path:'relationships-offline',
+ component: RelationshipsOfflineComponent,
+ title:'Relationships Offline Activity',
+}
+
 ];
 
 @NgModule({

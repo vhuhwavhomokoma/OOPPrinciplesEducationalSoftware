@@ -1,1 +1,50 @@
-<p>relationships-online works!</p>
+<div class="activity-container">
+  <h3>This activity will help increase your understanding of the relationships between different classes in OOP.</h3>
+  <h2>Fill in the Missing Words</h2><br><br>
+  <p>
+    1.
+    <input [(ngModel)]="userAnswers[0]" type="text" placeholder="" />
+    is a mechanism where a class can derive properties and behavior (methods) from another class. It represents an "is-a" relationship.
+  </p>
+  <p>
+    2.
+  <input [(ngModel)]="userAnswers[1]" type="text" placeholder="" />
+  has general connection between objects.
+  </p>
+  <p>
+    3.
+    <input [(ngModel)]="userAnswers[2]" type="text" placeholder="" />
+    is a relationship where one class contains a reference to another class. It represents a "has-a" relationship and can exist even if the other object exists independently.
+  </p>
+
+  <p>
+    4. In
+    <input [(ngModel)]="userAnswers[3]" type="text" placeholder="" />,
+    an object is made up of one or more objects that are an integral part of it. If the containing object is destroyed, its parts are also destroyed.
+  </p>
+  <p>
+    5.
+    <input [(ngModel)]="userAnswers[4]" type="text" placeholder="" />
+    is a temporary reliance between classes.
+  </p>
+  <p>
+    6.
+    <input [(ngModel)]="userAnswers[5]" type="text" placeholder="" />
+    represents a weak relationship between two classes, where each can exist independently. It is typically used when one class temporarily uses the services of another class.
+  </p>
+  <p>
+    7.
+    <input [(ngModel)]="userAnswers[6]" type="text" placeholder="" />
+    Is-a relationship between a subclass and superclass.
+  </p>
+  <br><br><br>
+  <button (click)="checkAnswers()">Check Answers</button>
+  <p *ngIf="isCorrect !== null" [class.correct]="isCorrect" [class.incorrect]="!isCorrect">
+    {{ feedbackMessage }}
+  </p>
+  <BR><BR><BR>
+  <div class="button-group space-x-4">
+    <button class="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400">Back</button>
+    <button class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">HomePage</button>
+  </div>
+</div>
