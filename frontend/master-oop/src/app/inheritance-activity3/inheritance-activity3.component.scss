@@ -1,3 +1,15 @@
+html{
+  background-color: #A5DDA4  !important;
+}
+
+.content-container {
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+
 .example-box {
     width: 200px;
     height: 200px;
@@ -29,15 +41,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    place-items: center;
     flex-direction: column;
     text-align: center;
     font-family: Arial, sans-serif;
   }
 
   .parent {
-    background-color: silver;
-    padding: 50px 50px;
-    border-radius: 5px;
+    padding: 10px 10px;
+    border-radius: 3px;
     margin-bottom: 50px;
     font-weight: bold;
     position: relative;
@@ -48,14 +60,15 @@
     gap: 20px;
     justify-content: center;
     margin-bottom: 50px;
+    position: relative;
   }
 
   .child {
-    background-color: silver;
-    padding: 50px 50px;
-    border-radius: 5px;
+    padding: 10px 10px;
+    border-radius: 3px;
     font-weight: bold;
     position: relative;
+    margin: 0 auto; 
   }
 
   /* Arrows */
@@ -94,5 +107,29 @@
     left: 50%;
     transform: translateX(-50%);
   }
- 
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
   
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* 2 columns */
+    grid-template-rows: repeat(3, auto);  /* 3 rows */
+    gap: 1px;
+}
+
+.image-container img {
+    width: 100%;  /* Make images take the full width of their grid cell */
+    height: auto;  /* Maintain aspect ratio */
+}

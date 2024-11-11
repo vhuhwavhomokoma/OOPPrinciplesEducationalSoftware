@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-relationships',
@@ -9,6 +10,11 @@ import { Component } from '@angular/core';
 })
 
 export class RelationshipsComponent {
+  constructor(private router:Router){}
+  next(){
+    this.router.navigate(['/inheritence3']);
+  }
+
 }
 
 
