@@ -53,7 +53,7 @@ const routes: Routes = [
     title:'Encapsulation'
   },
   {
-    path:'inheritence',
+    path:'inheritance',
     component:InheritenceComponent,
     title:'Inheritance'
   },

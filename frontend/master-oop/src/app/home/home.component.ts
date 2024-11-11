@@ -24,7 +24,7 @@ export class HomeComponent {
   }
 
   goToInheritance(){
-    this.router.navigate(['/inheritence']);
+    this.router.navigate(['/inheritance']);
   }
 
   goToEncapsulation(){
