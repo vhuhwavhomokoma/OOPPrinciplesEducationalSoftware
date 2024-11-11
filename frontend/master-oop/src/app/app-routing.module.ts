@@ -20,6 +20,11 @@ import { ClassesOnlineGame2Component } from './classes-online-game2/classes-onli
 import { ClassesOnlineGame1Component } from './classes-online-game1/classes-online-game1.component';
 import { ObjectsComponent } from './objects/objects.component';
 import { DiagramsComponent } from './diagrams/diagrams.component';
+import { PolymorphismActivityOneComponent } from './polymorphism-activity-one/polymorphism-activity-one.component';
+import { PolymorphismActivityTwoComponent } from './polymorphism-activity-two/polymorphism-activity-two.component';
+import { PolymorphismActivityThreeComponent } from './polymorphism-activity-three/polymorphism-activity-three.component';
+import { PolymorphismDragDropGameComponent } from './polymorphism-drag-drop-game/polymorphism-drag-drop-game.component';
+
 
 const routes: Routes = [
   {
@@ -92,6 +97,31 @@ const routes: Routes = [
     component:PolymorphismComponent,
     title:'Polymorphism'
   },
+  {
+    path:'polymorphism-activity-one',
+    component:PolymorphismActivityOneComponent,
+    title: 'polymorphism activity1'
+  },
+
+  {
+    path:'polymorphism-activity-two',
+    component :PolymorphismActivityTwoComponent,
+    title:'polymorphism activity2'
+  },
+
+  {
+    path:'polymorphism-activity-three',
+    component :PolymorphismActivityThreeComponent ,
+    title:'polymorphism activity3'
+  },
+
+  {
+    path:'polymorphism-drag-drop-game',
+    component:PolymorphismDragDropGameComponent,
+    title:'online-activity'
+
+  },
+  
   {
     path:'relationships',
     component:RelationshipsComponent,

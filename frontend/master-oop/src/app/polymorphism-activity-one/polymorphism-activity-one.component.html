@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Types of Polymorphism</title>
+  <style>
+    /* General Page Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #D2A039;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Main Container */
+    .container {
+      width: 850px;
+      background-color: #FFF2CC;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border: 4px solid #D27828;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Title */
+    .title {
+      font-size: 28px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    /* Header Box - Centered as Part of Diagram */
+    .header-box {
+      background-color: #FFDF91;
+      padding: 8px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      color: #333;
+      width: fit-content;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    /* Types Section */
+    .types {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+      gap: 50px;
+    }
+
+    .type-box {
+      background-color: #C6E3C2;
+      padding: 10px 15px;
+      border-radius: 10px;
+      font-weight: bold;
+      text-align: center;
+      width: 150px;
+    }
+
+    /* Subtype Boxes */
+    .subtype {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      gap: 20px;
+    }
+
+    .subtype-box {
+      background-color: #FFDF91;
+      padding: 5px 10px;
+      border-radius: 10px;
+      font-size: 14px;
+      color: #333;
+      font-weight: bold;
+      width: fit-content;
+    }
+
+    /* Description Text */
+    .description {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+      margin: 20px 0;
+    }
+
+    /* Bullet List */
+    .bullet-list {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    /* Button Styles */
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: #D27828;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #b25a20;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Title -->
+  <div class="title">Types of Polymorphism</div>
+  
+  <!-- Centered Header Box as Part of Diagram -->
+  <div class="header-box">Polymorphism</div>
+
+  <!-- Types Section -->
+  <div class="types">
+    <div class="type-box">Static/compile time</div>
+    <div class="type-box">Dynamic/run-time</div>
+  </div>
+
+  <!-- Subtype Boxes -->
+  <div class="subtype">
+    <div class="subtype-box">function overloading</div>
+    <div class="subtype-box">Operation Overloading</div>
+    <div class="subtype-box">Virtual function</div>
+  </div>
+
+  <!-- Description and Explanation with Bullet Points -->
+  <div class="description">
+    <strong>Static Polymorphism (Compile-Time Polymorphism):</strong>
+    <ul class="bullet-list">
+      <li>This type is resolved during compile time, meaning the decision of which function to call happens before the program runs.</li>
+      <li>Examples include:
+        <ul class="bullet-list">
+          <li><strong>Function Overloading:</strong> Occurs when two or more functions in the same scope have the same name but different parameters (either in number or type).</li>
+          <li><strong>Operator Overloading:</strong> Allows existing operators to have new meanings based on the types of operands involved.</li>
+        </ul>
+      </li>
+      <li>Static polymorphism is also known as early binding because the method to be executed is determined at compile time.</li>
+    </ul>
+  </div>
+
+  <div class="description">
+    <strong>Dynamic Polymorphism (Run-Time Polymorphism):</strong>
+    <ul class="bullet-list">
+      <li>Dynamic polymorphism is referred to as late binding since the method call is determined during execution, and memory allocation occurs at runtime.</li>
+      <li>This type is resolved during runtime, allowing for more flexible behavior in programs.</li>
+      <li>The primary mechanism here is method overriding, where a subclass provides a specific implementation of a method that is already defined in its superclass.</li>
+    </ul>
+  </div>
+
+  <!-- Navigation Buttons -->
+  <div class="buttons">
+    <button class="button">Back</button>
+    <button class="button">Next</button>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
