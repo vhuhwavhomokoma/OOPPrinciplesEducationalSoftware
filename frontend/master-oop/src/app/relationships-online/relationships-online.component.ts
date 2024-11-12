@@ -1,6 +1,7 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
 selector: 'app-relationships-online',
@@ -25,4 +26,11 @@ checkAnswers(): void {
       ? 'Great job! Your answers are correct.'
       : 'Try again. Some answers are incorrect. Answers are: 1. Inheritance 2. Association 3. Aggregation 4. Composition 5. Dependency 6.Association 7. Inheritance ';
   }
+
+  constructor(private router:Router){}
+  next(){
+    this.router.navigate(['/relationships-page-three']);
+  }
+
+
 }
