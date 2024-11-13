@@ -73,4 +73,9 @@ body {
     50% { opacity: 0.5; transform: translate(30px, -30px) scale(1.5); }
     100% { opacity: 0; transform: translate(0, 0) scale(1); }
   }
-  
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }

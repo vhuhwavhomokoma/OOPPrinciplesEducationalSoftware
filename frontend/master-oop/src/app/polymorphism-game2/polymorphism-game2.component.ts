@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-polymorphism-game2',
@@ -17,7 +17,10 @@ export class PolymorphismGame2Component {
   showScore: boolean = false;
   showSparkles: boolean = false;
   sparkles: Array<{ emoji: string, left: string, top: string }> = [];
-
+  constructor(private router:Router){}
+  next(){
+    this.router.navigate(['/polymorphism-activity-two']);
+  }
   checkAnswers() {
     let score = 0;
     this.userAnswers.forEach((answer, index) => {
