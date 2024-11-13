@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-polymorphism-drag-drop-game',
@@ -8,5 +9,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./polymorphism-drag-drop-game.component.scss']
 })
 export class PolymorphismDragDropGameComponent {
-
+  constructor(private router:Router){}
+  back(){
+    this.router.navigate(['/home']);
+  }
 }

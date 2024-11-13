@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-polymorphism-activity-two',
@@ -8,5 +9,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./polymorphism-activity-two.component.scss']
 })
 export class PolymorphismActivityTwoComponent {
+  constructor(private router:Router){}
+  next(){
+    this.router.navigate(['polymorphism-activity-three']);
+  }
+
+  back(){
+    this.router.navigate(['/polymorphism-activity-two']);
+  }
 
 }

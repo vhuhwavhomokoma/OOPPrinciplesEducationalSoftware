@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-relationships-page-three',
   standalone: true,
@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./relationships-page-three.component.scss']
 })
 export class RelationshipsPageThreeComponent {
+  constructor(private router:Router){}
 
+  back(){
+    this.router.navigate(['/home']);
+  }
 }

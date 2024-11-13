@@ -71,42 +71,30 @@ html{
     margin: 0 auto; 
   }
 
-  /* Arrows */
-  .arrow {
-    width: 2px;
-    height: 20px;
-    background-color: black;
-    position: absolute;
-    top: 30px;
-  }
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
 
-  .arrow-left {
-    left: 15%;
-    transform: rotate(-45deg);
-  }
+.marks-container {
+  display: flex;
+  align-items: center;
+}
 
-  .arrow-center {
-    left: 50%;
-    transform: translateX(-50%);
-  }
+.btn {
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 5px;
+}
 
-  .arrow-right {
-    right: 15%;
-    transform: rotate(45deg);
-  }
+.total-marks {
+  margin-left: 10px;
+  font-weight: bold;
+}
 
-  .arrow::after {
-    content: '';
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid black;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+
 
   .grid-container {
     display: grid;

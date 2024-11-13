@@ -51,3 +51,19 @@ html{
   font-size: 20px;
   display: none;
 }
+
+.marks-container {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.total-marks {
+  margin-left: 10px;
+  font-weight: bold;
+}

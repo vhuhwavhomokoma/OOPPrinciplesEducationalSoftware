@@ -5,35 +5,43 @@
 </head>
 <body>
     <div class="content-container">
+        
         <h1 class="text-4xl font-bold mt-8 mg-bottom">
-            Home page
+            Object-Oriented Programming Fundamentals
         </h1>
+        <div class="grid">
+            <div>
+                <button class="card purple poppins-medium mg-bottom" (click)="goToClasses()"><strong>CLASSES, OBJECTS & UML</strong><br><span class="lesson-description">This lesson aims to introduce students to Classes, Objects, and Structures of Object-oriented programming.</span></button>
+            </div>
+            
+        
+            <div>
+                <button class="card yellow poppins-medium mg-bottom"  (click) = "goToPolymorphism()"><strong>POLYMORPHISM</strong><br> <span class="lesson-description" > Understanding Polymorphism in Object-Oriented programming: Exploring its Definition, Types, and Practical Application.</span></button>
+            </div>
+        
+            <div>
+                <button class="card green poppins-medium mg-bottom" (click) = "goToInheritance()"><strong>INHERITANCE</strong><br> <span class="lesson-description">Discusses the basic concepts related to inheritance, different types of inheritance, and its application.</span></button>
+            </div>
+        
+            <div>
+                <button class="card blue poppins-medium mg-bottom" (click) = "goToRelationships()"><strong>RELATIONSHIPS</strong><br><span class="lesson-description">This lesson aims to discuss the fundamental relationships between classes in object-oriented programming.</span></button>
+            </div>
+        
+        
+            <div>
+                <button class="card pink poppins-medium mg-bottom" (click) = "goToEncapsulation()"><strong>ENCAPSULATION</strong><br><span class="lesson-description">This aims to help students understand the concept of encapsulation in OOP, recognize its importance in programming, and see how it applies to real-world scenarios.</span></button>
+            </div>
+        
+            <div>
+                <button class="card orange poppins-medium mg-bottom" (click) = "goToAbstraction()"><strong>ABSTRACTION</strong><br><span class="lesson-description">By the end of this lesson, students will understand the concept of abstraction in Object-Oriented Programming (OOP).</span></button>
+            </div>
+    
+        </div>
+
+        
     </div>
 
-    <div>
-        <button class="btn btn-success mg-bottom" (click) = "goToClasses()">Classes, Object & UML</button>
-    </div>
-
-    <div>
-        <button class="btn btn-success mg-bottom" (click) = "goToPolymorphism()">Polymorphism</button>
-    </div>
-
-    <div>
-        <button class="btn btn-success mg-bottom" (click) = "goToInheritance()">Inheritance</button>
-    </div>
-
-    <div>
-        <button class="btn btn-success mg-bottom" (click) = "goToRelationships()">Relationships</button>
-    </div>
-
-
-    <div>
-        <button class="btn btn-success mg-bottom" (click) = "goToEncapsulation()">Encapsulation</button>
-    </div>
-
-    <div>
-        <button class="btn btn-success mg-bottom" (click) = "goToAbstraction()">Abstraction</button>
-    </div>
+   
 
 
     

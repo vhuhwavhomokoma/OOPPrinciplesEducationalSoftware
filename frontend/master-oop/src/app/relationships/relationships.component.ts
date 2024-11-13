@@ -12,8 +12,13 @@ import { Router } from '@angular/router';
 export class RelationshipsComponent {
   constructor(private router:Router){}
   next(){
-    this.router.navigate(['/inheritence3']);
+    this.router.navigate(['relationships-page-two']);
   }
+
+  back(){
+    this.router.navigate(['/home']);
+  }
+
 
 }
 

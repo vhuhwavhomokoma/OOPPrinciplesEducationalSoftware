@@ -15,7 +15,8 @@ interface ImageType {
   styleUrls: ['./inhertitance-activity2.component.scss']
 })
 export class InhertitanceActivity2Component {
-
+  TotalMarks:number = 0; //Tally of total marks for activity
+  isVisible = false;
   imageTypes: ImageType[] = [
     { imageUrl: 'assets/multi.png', type: 'Multilevel' },
     { imageUrl: 'assets/hierarchy.png', type: 'Hierarchical' },
@@ -36,6 +37,7 @@ export class InhertitanceActivity2Component {
   
     // Check for a correct match
     if (this.imageTypes.find(imageType => imageType.imageUrl === imageUrl)?.type === selectedType) {
+      this.TotalMarks+=1;
       this.correctMatches.add(imageUrl);
     } else {
       this.correctMatches.delete(imageUrl);
@@ -44,8 +46,17 @@ export class InhertitanceActivity2Component {
   
 
   isCorrectMatch(imageUrl: string) {
-    return this.correctMatches.has(imageUrl);
+    if(this.correctMatches.has(imageUrl)){
+      
+      return true;
+    }
+    return false;
   }
+
+  marks(){
+    this.isVisible = true;
+  }
+  
   
   
   constructor(private router:Router){}

@@ -15,6 +15,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./inheritance-activity3.component.scss']
 })
 export class InheritanceActivity3Component {
+  TotalMarks:number = 0; //Tally of total marks for activity
+  isVisible = false;
   inputText: string = '';
   inputChild1: string = '';
   inputChild2: string = '';
@@ -34,9 +36,14 @@ export class InheritanceActivity3Component {
   next(){
     this.router.navigate(['/inheritenceOfflineActivity']);
   }
+
+  marks(){
+    this.isVisible = true;
+  }
   
   isParentMatching(): boolean {
     if(this.inputText.toLowerCase() === 'animal'){
+      this.TotalMarks +=1;
       return true;
     }
     return false;
@@ -46,6 +53,7 @@ export class InheritanceActivity3Component {
   isChildMatching1(): boolean {
     this.inputChild1 = this.inputChild1.toLowerCase();
     if(this.inputChild1.toLowerCase() === 'bird'){
+      this.TotalMarks +=1;
       return true;
     }
     return false;
@@ -54,6 +62,7 @@ export class InheritanceActivity3Component {
   isChildMatching2(): boolean {
     this.inputChild2 = this.inputChild2.toLowerCase();
     if(this.inputText.toLowerCase() === 'mammal'){
+      this.TotalMarks +=1;
       return true;
     }
     return false;
@@ -62,6 +71,7 @@ export class InheritanceActivity3Component {
   isChildMatching3(): boolean {
     this.inputChild3 = this.inputChild3.toLowerCase();
     if(this.inputText.toLowerCase() === 'reptile'){
+      this.TotalMarks +=1;
       return true;
     }
     return false;
@@ -70,6 +80,7 @@ export class InheritanceActivity3Component {
   isChildMatching4(): boolean {
     this.inputChild4 = this.inputChild4.toLowerCase();
     if(this.birds.includes(this.inputChild4)){
+      this.TotalMarks +=1;
       return true;
     }
     return false;
@@ -77,6 +88,7 @@ export class InheritanceActivity3Component {
   isChildMatching5(): boolean {
     this.inputChild5 = this.inputChild5.toLowerCase();
     if(this.birds.includes(this.inputChild5)){
+      this.TotalMarks +=1;
       return true;
     }
     return false;
@@ -84,6 +96,7 @@ export class InheritanceActivity3Component {
   isChildMatching6(): boolean {
     this.inputChild6 = this.inputChild6.toLowerCase();
     if(this.mammals.includes(this.inputChild6)){
+      this.TotalMarks +=1;
       return true;
     }
     return false;
@@ -91,6 +104,7 @@ export class InheritanceActivity3Component {
   isChildMatching7(): boolean {
     this.inputChild7 = this.inputChild7.toLowerCase();
     if(this.mammals.includes(this.inputChild7)){
+      this.TotalMarks +=1;
       return true;
     }
     return false;
@@ -98,6 +112,7 @@ export class InheritanceActivity3Component {
   isChildMatching8(): boolean {
     this.inputChild8 = this.inputChild8.toLowerCase();
     if(this.reptile.includes(this.inputChild8)){
+      this.TotalMarks +=1;
       return true;
     }
     return false;
@@ -105,6 +120,7 @@ export class InheritanceActivity3Component {
   isChildMatching9(): boolean {
     this.inputChild9 = this.inputChild9.toLowerCase();
     if(this.reptile.includes(this.inputChild9)){
+      this.TotalMarks +=1;
       return true;
     }
     return false;
