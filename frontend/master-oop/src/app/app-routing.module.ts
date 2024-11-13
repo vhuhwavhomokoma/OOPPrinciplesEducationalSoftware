@@ -13,7 +13,12 @@ import { ClassesOfflineComponent } from './classes-offline/classes-offline.compo
 import { PolymorphismActivityOneComponent } from './polymorphism-activity-one/polymorphism-activity-one.component';
 import { PolymorphismActivityTwoComponent } from './polymorphism-activity-two/polymorphism-activity-two.component';
 import { PolymorphismActivityThreeComponent } from './polymorphism-activity-three/polymorphism-activity-three.component';
-import { PolymorphismDragDropGameComponent } from './polymorphism-drag-drop-game/polymorphism-drag-drop-game.component';
+// import { PolymorphismDragDropGameComponent } from './polymorphism-drag-drop-game/polymorphism-drag-drop-game.component';
+// import { PolymorphismGame1Component } from './polymorphism-game1/polymorphism-game1.component';
+import { PolymorphismGame2Component } from './polymorphism-game2/polymorphism-game2.component';
+import { PolymorphismGame3Component } from './polymorphism-game3/polymorphism-game3.component';
+import { PolymorphismGame1Component } from './polymorphism-game1/polymorphism-game1.component';
+
 
 
 const routes: Routes = [
@@ -76,11 +81,34 @@ const routes: Routes = [
   },
 
   {
-    path:'polymorphism-drag-drop-game',
-    component:PolymorphismDragDropGameComponent,
-    title:'online-activity'
+    path:'polymorphism-game1',
+    component:PolymorphismGame1Component,
+    title:'polymorphism game1'
 
   },
+
+  {
+    path:'polymorphism-game2',
+    component:PolymorphismGame2Component,
+    title:'polymorphism game2'
+
+  },
+
+  {
+    path:'polymorphism-game3',
+    component:PolymorphismGame3Component,
+    title:'polymorphism game3'
+
+  },
+
+  // {
+  //   path:'polymorphism-drag-drop-game',
+  //   component:PolymorphismDragDropGameComponent,
+  //   title:'online-activity'
+
+  // },
+
+
   
   {
     path:'relationships',

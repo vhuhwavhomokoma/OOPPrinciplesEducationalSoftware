@@ -1,0 +1,37 @@
+<div class="container">
+    <h2>Polymorphism Adventure Quiz - Lesson 1</h2>
+    <p>Welcome! Answer these True/False questions to show your knowledge of polymorphism basics!</p>
+  
+    <div class="question">
+      <p><strong>1. Polymorphism means "many forms".</strong></p>
+      <label><input type="radio" name="q1" value="True"> True</label><br>
+      <label><input type="radio" name="q1" value="False"> False</label>
+    </div>
+    <div class="question">
+      <p><strong>2. Polymorphism is exclusive to object-oriented programming.</strong></p>
+      <label><input type="radio" name="q2" value="True"> True</label><br>
+      <label><input type="radio" name="q2" value="False"> False</label>
+    </div>
+    <div class="question">
+      <p><strong>3. Polymorphism allows objects to behave differently based on the context.</strong></p>
+      <label><input type="radio" name="q3" value="True"> True</label><br>
+      <label><input type="radio" name="q3" value="False"> False</label>
+    </div>
+    <div class="question">
+      <p><strong>4. Polymorphism can only be achieved using interfaces.</strong></p>
+      <label><input type="radio" name="q4" value="True"> True</label><br>
+      <label><input type="radio" name="q4" value="False"> False</label>
+    </div>
+    <div class="question">
+      <p><strong>5. Polymorphism supports code reuse by enabling single functions to work in multiple scenarios.</strong></p>
+      <label><input type="radio" name="q5" value="True"> True</label><br>
+      <label><input type="radio" name="q5" value="False"> False</label>
+    </div>
+  
+    <button (click)="checkAnswers()">Submit Answers</button>
+    <p class="score" *ngIf="score !== null">
+      Score: {{ score }}/5 - {{ score === 5 ? "You’re a polymorphism pro! 🎉" : "Keep trying! 💪" }}
+    </p>
+  </div>
+  <div class="sparkles" id="sparkles" *ngIf="showSparkles"></div>
+  
