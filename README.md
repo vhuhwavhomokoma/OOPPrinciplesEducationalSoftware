@@ -17,18 +17,32 @@
 
 ## Running the Frontend (Angular)
 
+<p>First of all. You need to install DaisyUI and Tailwind before installing angular</p>
+
+**Installing Tailwind**
+<p>Please refer to the following YouTube video for instructions on how to install Tailwind: https://youtu.be/h-On4H5FeQY?si=Bv2YyWBH1Mz5OoPF</p>
+
+**Installing DaisyUI**
+<P>DaisyUI is a Tailwind plugin. Meaning to need Tailwind installed to install DaisyUI.</P>
+1. Go into the folder "frontend\master-oop"
+2. run the command: npm i -D daisyui@latest<br><br>
+
 **Installing Angular** <br>
 <p>Angular is needed for the front end</p>
 1. In the command prompt, run the command npm: install -g @angular/cli@latest<br><br>
 2. We are using Anguar 18.2.7
 
 **Installing The rest of the frontend packages and dependencies** <br>
-<p>All our packages and dependencies is really simple.</p>
+<p>Installing all our packages and dependencies is straightforward. Go into the "frontend\master-oop" directory</p>
 1. Run the command: npm install <br><br>
 
 **Running the Frontend** <br>
-1.change directories to the Workbench subdirectory within the frontend subdirectory. This can be done using the command
-
+1. change directories to the "master-oop" subdirectory within the frontend subdirectory. This can be done using the command
 cd frontend/master-oop
 
-1. Once inside Workbench, run the command ng serve --open. This runs the app
+2. Once inside master-oop, run the command ng serve --open. This runs the app
+
+**Generating a component in Angular**
+
+1. Go into the directory "frontend\master"
+2. run the command: ng generate component <component_name> <br><br>

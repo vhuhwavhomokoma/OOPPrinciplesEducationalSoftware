@@ -8,31 +8,19 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { trigger, transition, style, animate } from '@angular/animations';
 
 @Component({
-  selector: 'app-encapsulation',
+  selector: 'app-description',
   standalone: true,
   imports: [MatToolbarModule,
     MatSidenavModule,
     MatListModule,
     MatButtonModule,
     MatCardModule,
-    MatIconModule,
-    BrowserAnimationsModule,
-    NoopAnimationsModule,
-    RouterModule],
-  templateUrl: './encapsulation.component.html',
-  styleUrls: ['./encapsulation.component.scss'],
-  animations: [
-    trigger('routeAnimation', [
-      transition('* <=> *', [
-        style({ opacity: 0 }),
-        animate('0.3s', style({ opacity: 1 })),
-      ]),
-    ]),
-  ],
+    MatIconModule,],
+  templateUrl: './description.component.html',
+  styleUrls: ['./description.component.scss']
 })
-export class EncapsulationComponent {
+export class DescriptionComponent {
 
 }

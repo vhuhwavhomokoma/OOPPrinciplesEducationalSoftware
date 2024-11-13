@@ -35,15 +35,21 @@ import { RelationshipsPageThreeComponent } from './relationships-page-three/rela
 import { RelationshipsOnlineComponent } from './relationships-online/relationships-online.component';
 import { RelationshipsOfflineComponent } from './relationships-offline/relationships-offline.component';
 import { ClassesOnlineGame3Component } from './classes-online-game3/classes-online-game3.component';
+import { DescriptionComponent } from './encapsulation/components/description/description.component';
+import { IntroductionComponent } from './encapsulation/components/introduction/introduction.component';
+import { OfflineActivityComponent } from './encapsulation/components/offline-activity/offline-activity.component';
+import { OnlineActivityComponent } from './encapsulation/components/online-activity/online-activity.component';
+import { RealWorldApplicationsComponent } from './encapsulation/components/real-world-applications/real-world-applications.component';
+import { SummaryComponent } from './encapsulation/components/summary/summary.component';
 
 const routes: Routes = [
   {
-    path:'',
+    path: '',
     component: LoginComponent,
     title:'Login Page'
   },
   {
-    path:'register',
+    path: 'register',
     component: RegisterComponent,
     title:'Register'
   },
