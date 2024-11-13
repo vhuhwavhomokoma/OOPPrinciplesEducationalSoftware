@@ -18,3 +18,10 @@ html{
     font-weight: 500;
     font-style: normal;
 }
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
