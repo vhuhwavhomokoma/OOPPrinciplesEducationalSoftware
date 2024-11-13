@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './diagrams.component.scss'
 })
 export class DiagramsComponent {
-
+  next(){
+    
+  }
 }

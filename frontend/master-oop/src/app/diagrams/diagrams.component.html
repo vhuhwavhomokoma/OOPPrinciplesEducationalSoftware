@@ -16,5 +16,153 @@
             our ideas of what the Class or Object should look like.
         </p>
 
+        <p class="poppins-medium mg-bottom">
+            UML Class and Object diagrams are types of structural diagrams. Object diagrams capture a snapshot of an object’s state 
+            at a specific moment, while Class diagrams provide a template for how all objects should be structured. Both diagrams are 
+            valuable for illustrating how a system interacts with other systems or subsystems, and how data is managed throughout the 
+            system.
+        </p>
+
+        <h1 class="text-4xl font-bold mt-8 mg-bottom">
+            What is UML?
+        </h1>
+
+        <p class="poppins-medium mg-bottom">
+            UML (Unified Modelling Language) modelling is a standardized way to visualize, specify, and document the structure and 
+            behaviour of a system. It provides a suite of diagram types, each designed to represent different aspects of the system, 
+            such as its structure, interactions, processes, and data flow. Common UML diagrams include Class, Object, Use Case, Sequence, 
+            and Activity diagrams, each serving a specific purpose in modelling both the static and dynamic aspects of a system.
+        </p>
+
+        <h1 class="text-4xl font-bold mt-6 mg-bottom">
+            UML Class diagrams
+        </h1>
+
+        <p class="poppins-medium mg-bottom">
+            UML class diagrams provide a blueprint or template of how all objects of that Class type should be structured and behave. UML 
+            class diagrams provide a blueprint or template of how all objects of that Class type should be structured and behave.
+        </p>
+       
+        <p class="poppins-medium mg-bottom">
+            Let us look at an example of a UML Class diagram: 
+        </p>
+
+        <div class="mg-bottom" style="display: flex; justify-content: center;">
+            <img src="../../assets/class_diagram.drawio.png" width="700px" height="700px">
+        </div>
+
+        <p class="poppins-medium mg-bottom">
+            As you can see from the UML Class Diagram, the top of the class is reserved for attributes and the bottom section is reserved 
+            for methods. As observed from the label at the top, the Class Name is Person. We shall breakdown this Class and explain it’s 
+            individual parts (We suggest that the reader draw or take a picture of the class for reference).
+        </p>
+
+        <h1 class="text-4xl font-bold mt-6 mg-bottom">
+            Visibility Operators
+        </h1>
+
+        <p class="poppins-medium mg-bottom">
+            In UML Class Diagrams, the symbols +, and - represent visibility modifiers or access modifiers for attributes and methods. These 
+            symbols indicate the level of access control for each class member:
+        </p>
+
+        <ul style="list-style-type: disc; margin-left: 20px;" class="poppins-medium mg-bottom">
+            <li>+ (Public): The member (attribute or method) can be accessed by anyone.</li>
+            <li>- (Private): The member (attribute or method) can only be accessed within the Class itself.</li>
+        </ul>
+
+        <p class="poppins-medium mg-buttom">
+            The reason we have visibility modifiers in the first place is security. If a Person object has an ID attribute, we do not want 
+            everyone having the ability to access this attribute. We only want the Person to be able to access the ID. Hence why we make 
+            the ID a private member.
+        </p>
+
+        <h1 class="text-4xl font-bold mt-8 mg-bottom">
+            Attributes and Methods
+        </h1>
+
+        <p class="poppins-medium mg-bottom">
+            As previously explained the attributes are the characteristics of the Class. The main attributes of the Person Class are: name, 
+            surname and age.
+        </p>
+
+        <p class="poppins-medium mg-bottom">
+            An attribute in a Class diagram consists of three components:
+        </p>
+
+        <ul style="list-style-type: disc; margin-left: 20px;" class="poppins-medium mg-bottom">
+            <li>The attribute name.</li>
+            <li>The attribute data type: Determines whether it’s a string, number, or character.</li>
+            <li>Visibility modifier: Determines who can access the attribute.</li>
+        </ul>
+
+        <p class="poppins-medium mg-bottom">
+            Methods represent the behaviour or actions of the Class, e.g., the walk method is an action performed by the Person class.
+        </p>
+
+        <p class="poppins-medium mg-bottom">A method is primarily comprised of:</p>
+
+        <ul style="list-style-type: disc; margin-left: 20px;" class="poppins-medium mg-bottom">
+            <li>Method name</li>
+            <li>Visibility modifier: Determines who can access the method.</li>
+            <li>Visibility modifier: Determines who can access the attribute.</li>
+            <li>Parameters: The values the Method can accept and work with.</li>
+            <li>Return type: What data type the method returns. Please note that void means the method returns nothing.</li>
+        </ul>
+
+        <h1 class="text-4xl font-bold mt-8 mg-bottom">
+            Getters and Setters
+        </h1>
+
+        <p class="poppins-medium mg-bottom">
+            Since attributes are private, it’s important to provide controlled ways to access and modify them. Getters and Setters are 
+            methods used for this purpose: getters retrieve (or "get") the values of attributes, while setters allow them to be modified (or "set"). 
+            These methods are typically public, defining what the outside world can and cannot do with the class’s attributes, thus enforcing 
+            encapsulation and control over the class's data.
+        </p>
+
+        <p class="poppins-medium mg-bottom">
+            In our example, we have getName, getAge and getSurname as getters, and setName, setAge, and setSurname as our getters and setters. 
+            These methods operate on the name, age, and surname attributes.
+        </p>
+
+        <h1 class="text-4xl font-bold mt-8 mg-bottom">
+            UML Object Diagrams
+        </h1>
+
+
+        <P class="poppins-medium mg-bottom">
+            A UML Object Diagram provides a snapshot of an object’s state at a specific moment in time. By showing the values of its attributes, 
+            it reveals the object’s current state at that point.
+        </P>
+
+        <p class="poppins-medium mg-bottom">
+            Let us look at an example of a UML Object diagram: 
+        </p>
+
+        <div class="mg-bottom" style="display: flex; justify-content: center;">
+            <img src="../../assets/object_diagram.drawio.png" width="680px" height="680px">
+        </div>
+
+        <p class="poppins-medium mg-bottom">
+            An object diagram primarily consists of the object's name and a set of attribute-value pairs, which display the values assigned to the object's attributes.
+        </p>
+
+        <button class="btn bg-orange-500 text-black hover:bg-orange-600 border-orange-500 hover:border-orange-600 focus:outline-none mg-bottom" (click)="next()">
+            Next
+        </button>
+
+
+
+
+
+
+
+
+
+
+
+        
+
     </div>
 </body>
