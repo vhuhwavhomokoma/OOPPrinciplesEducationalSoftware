@@ -1,5 +1,7 @@
-html{
-    background-color: #A5DDA4  !important;
+:host {
+  background-color: #A5DDA4;
+  display: block; /* Ensure it covers the component area */
+  min-height: 100vh; /* Optional, to cover the full viewport height */
 }
 
 .content-container {
