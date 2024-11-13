@@ -29,6 +29,7 @@ import { RelationshipsPageTwoComponent} from './relationships-page-two/relations
 import { RelationshipsPageThreeComponent } from './relationships-page-three/relationships-page-three.component';
 import { RelationshipsOnlineComponent } from './relationships-online/relationships-online.component';
 import { RelationshipsOfflineComponent } from './relationships-offline/relationships-offline.component';
+import { ClassesOnlineGame3Component } from './classes-online-game3/classes-online-game3.component';
 
 const routes: Routes = [
   {
@@ -155,6 +156,11 @@ const routes: Routes = [
     path:'diagrams',
     component:DiagramsComponent,
     title:'Diagrams'
+  },
+  {
+    path:'classes_online_game_3',
+    component:ClassesOnlineGame3Component,
+    title:'Classes Game 3'
   },
 
 {
