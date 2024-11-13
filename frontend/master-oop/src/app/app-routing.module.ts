@@ -14,6 +14,7 @@ import { ClassesOnlineGame2Component } from './classes-online-game2/classes-onli
 import { ClassesOnlineGame1Component } from './classes-online-game1/classes-online-game1.component';
 import { ObjectsComponent } from './objects/objects.component';
 import { DiagramsComponent } from './diagrams/diagrams.component';
+import { ClassesOnlineGame3Component } from './classes-online-game3/classes-online-game3.component';
 
 const routes: Routes = [
   {
@@ -85,6 +86,11 @@ const routes: Routes = [
     path:'diagrams',
     component:DiagramsComponent,
     title:'Diagrams'
+  },
+  {
+    path:'classes_online_game_3',
+    component:ClassesOnlineGame3Component,
+    title:'Classes Game 3'
   }
 ];
 

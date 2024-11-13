@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-diagrams',
@@ -8,6 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './diagrams.component.scss'
 })
 export class DiagramsComponent {
+
+  constructor(private router:Router){}
+
   next(){
     
   }
