@@ -151,16 +151,6 @@ const routes: Routes = [
     title:'polymorphism game3'
 
   },
-
-  // {
-  //   path:'polymorphism-drag-drop-game',
-  //   component:PolymorphismDragDropGameComponent,
-  //   title:'online-activity'
-
-  // },
-
-
-  
   {
     path:'relationships',
     component:RelationshipsComponent,
@@ -213,12 +203,12 @@ const routes: Routes = [
  component: RelationshipsOnlineComponent,
  title:'Relationships Online Activity',
 },
-
 {
  path:'relationships-offline',
  component: RelationshipsOfflineComponent,
  title:'Relationships Offline Activity',
-}
+},
+
 
 ];
 
