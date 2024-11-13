@@ -1,0 +1,64 @@
+<mat-card>
+    <div class="card-container">
+      <div class="card-image">
+        <img mat-card-image src="assets/images/smartphone.jpg" alt="Pill representing encapsulation">
+      </div>
+      <div class="card-content">
+        <mat-card-header>
+          <mat-card-title>What is Encapsulation?</mat-card-title>
+          <mat-card-subtitle>Understanding the Basics</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <div>
+                <strong>Encapsulation is when we:</strong>
+                <ul>
+                    <li>
+                        <p><strong>Bundle</strong> data (attributes/fields) and actions (methods) together inside a class.</p>
+                    </li>
+                    <li>
+                        <p>Hide the details of how things work inside the class by making some data private. This protects the data from being changed directly from outside the class.</p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <strong>Example:</strong> <hr>
+                Imagine a <strong>smartphone.</strong>
+                <ul>
+                    <li>
+                        <p>You can only interact with it using the screen and buttons (methods).</p>
+                    </li>
+                    <li>
+                        <p>The internal hardware (data) is hidden inside and protected from being damaged.</p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <strong>Key Concepts:</strong> <hr>
+                <ul>
+                    <li>
+                        <p><strong>Attributes (Data):</strong> Information that belongs to an object. For example, a <code>Person</code> object has a <code>name</code> and <code>age</code>.</p>
+                    </li>
+                    <li>
+                        <p><strong>Methods (Actions): </strong> Actions that an object can perform. For example, a <code>Person</code> can  <code col>introduce()</code> themselves.</p>
+                    </li>
+                    <li>
+                        <strong>Access Modifiers:</strong>
+                        <ul>
+                            <li>
+                                <strong>Private:</strong> Only the class can use this data.
+                            </li>
+                            <li>
+                                <strong>Public:</strong> Everyone can use this method to interact with the class.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" routerLink="/encapsulation/description">Next: Real Word Application</button>
+        </mat-card-actions>
+      </div>
+    </div>
+  </mat-card>
+  

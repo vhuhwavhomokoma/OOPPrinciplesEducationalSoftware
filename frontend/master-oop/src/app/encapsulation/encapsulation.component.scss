@@ -1,0 +1,27 @@
+@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+.sidenav-container {
+    height: 100vh;
+  }
+  
+  mat-toolbar {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+  }
+  
+  .content {
+    padding: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+  }
+  
+  mat-card {
+    margin: 16px 0;
+    padding: 16px;
+  }
+  
+  a.mat-list-item {
+    font-weight: bold;
+  }
+  
