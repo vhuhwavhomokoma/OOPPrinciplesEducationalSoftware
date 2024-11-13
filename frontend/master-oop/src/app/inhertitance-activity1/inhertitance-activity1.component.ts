@@ -22,7 +22,8 @@ interface Question {
   styleUrls: ['./inhertitance-activity1.component.scss']
 })
 export class InhertitanceActivity1Component {
-
+  TotalMarks:number = 0; //Tally of total marks for activity
+  isVisible = false;
   questions: Question[] = [
     {
       text: 'What is inheritance?',
@@ -63,7 +64,16 @@ export class InhertitanceActivity1Component {
     const question = this.questions[questionIndex];
     question.selectedIndex = optionIndex;
     question.feedbackMessage = question.options[optionIndex].isCorrect ? 'Correct!' : 'Incorrect.';
+    if(question.options[optionIndex].isCorrect){
+      this.TotalMarks+=1;
+    }
   }
+
+  marks(){
+    this.isVisible = true;
+  }
+  
+  
 
   constructor(private router:Router){}
   next(){

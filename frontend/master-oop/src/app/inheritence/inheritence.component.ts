@@ -12,4 +12,8 @@ export class InheritenceComponent {
   next(){
     this.router.navigate(['/inheritenceActivity1']);
   }
+
+  back(){
+    this.router.navigate(['/home']);
+  }
 }
