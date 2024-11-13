@@ -1,114 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polymorphism Adventure Quiz - Lesson 2</title>
-    <style>
-        body { font-family: Arial, sans-serif; background-color: #fff2cc; overflow: hidden; }
-        .container { max-width: 600px; margin: 50px auto; padding: 20px; text-align: center; border-radius: 15px; box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); background-color: #d2a039; position: relative; z-index: 2; }
-        h2 { color: #333; font-size: 24px; margin-bottom: 20px; }
-        .question { margin: 20px 0; text-align: left; }
-        .question p { font-size: 18px; }
-        .score { margin-top: 20px; font-weight: bold; font-size: 1.5em; display: none; }
-        button { padding: 12px 20px; background-color: #ff5722; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; }
-        button:hover { background-color: #ff784e; }
-        input[type="text"] { width: 100%; padding: 8px; margin-top: 10px; border-radius: 5px; border: 1px solid #ccc; }
-        .sparkles { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; display: none; }
-        .sparkle { position: absolute; font-size: 24px; animation: sparkle 1.5s infinite; }
-        @keyframes sparkle { 0% { opacity: 1; transform: translate(0, 0) scale(1); } 50% { opacity: 0.5; transform: translate(30px, -30px) scale(1.5); } 100% { opacity: 0; transform: translate(0, 0) scale(1); } }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h2>Polymorphism Adventure Quiz - Lesson 2</h2>
-        <p>Fill in the blanks with the correct terms about polymorphism!</p>
-
-        <div class="question">
-            <p>1. _________ polymorphism is also known as early binding.</p>
-            <input type="text" id="q1" placeholder="Enter your answer here" />
-        </div>
-        <div class="question">
-            <p>2. In __________ polymorphism, the method call is determined during execution.</p>
-            <input type="text" id="q2" placeholder="Enter your answer here" />
-        </div>
-        <div class="question">
-            <p>3. ___________ overloading is a form of static polymorphism.</p>
-            <input type="text" id="q3" placeholder="Enter your answer here" />
-        </div>
-        <div class="question">
-            <p>4. Dynamic polymorphism is also known as __________ binding.</p>
-            <input type="text" id="q4" placeholder="Enter your answer here" />
-        </div>
-        <div class="question">
-            <p>5. ____________ is the process of a subclass providing a specific implementation of a method already defined in its superclass.</p>
-            <input type="text" id="q5" placeholder="Enter your answer here" />
-        </div>
-
-        <button onclick="checkAnswers()">Submit Answers</button>
-        <p class="score" id="score"></p>
+<div class="container">
+    <h2>Polymorphism Adventure Quiz - Lesson 2</h2>
+    <p>Fill in the blanks with the correct terms about polymorphism!</p>
+  
+    <div class="question">
+      <p>1. _________ polymorphism is also known as early binding.</p>
+      <input type="text" [(ngModel)]="userAnswers[0]" placeholder="Enter your answer here" />
     </div>
-
-    <div class="sparkles" id="sparkles"></div>
-
-    <audio id="correctSound" src="correct-sound.mp3" preload="auto"></audio>
-    <audio id="wrongSound" src="wrong-sound.mp3" preload="auto"></audio>
-    <audio id="celebrationSound" src="celebration-sound.mp3" preload="auto"></audio>
-
-    <script>
-        function createSparkles() {
-            const sparkleContainer = document.getElementById('sparkles');
-            sparkleContainer.innerHTML = '';
-            const emojis = ["⭐️", "👏"];
-            for (let i = 0; i < 30; i++) {
-                const sparkle = document.createElement('div');
-                sparkle.classList.add('sparkle');
-                sparkle.style.left = `${Math.random() * 100}%`;
-                sparkle.style.top = `${Math.random() * 100}%`;
-                sparkle.textContent = emojis[Math.floor(Math.random() * emojis.length)];
-                sparkle.style.color = i % 2 === 0 ? 'red' : 'green';
-                sparkle.style.animationDelay = `${Math.random() * 1.5}s`;
-                sparkleContainer.appendChild(sparkle);
-            }
-            sparkleContainer.style.display = 'block';
-        }
-
-        function checkAnswers() {
-            const correctAnswers = ["Static", "Dynamic", "Function", "late", "Method Overriding"];
-            const userAnswers = [
-                document.getElementById("q1").value.trim(),
-                document.getElementById("q2").value.trim(),
-                document.getElementById("q3").value.trim(),
-                document.getElementById("q4").value.trim(),
-                document.getElementById("q5").value.trim()
-            ];
-            let score = 0;
-
-            const correctSound = document.getElementById("correctSound");
-            const wrongSound = document.getElementById("wrongSound");
-            const celebrationSound = document.getElementById("celebrationSound");
-
-            userAnswers.forEach((answer, index) => {
-                if (answer && answer.toLowerCase() === correctAnswers[index].toLowerCase()) {
-                    score++;
-                    correctSound.play();
-                } else {
-                    wrongSound.play();
-                }
-            });
-
-            const scoreElement = document.getElementById("score");
-            scoreElement.textContent = `Score: ${score}/5 - ` + (score === 5 ? "You’re a polymorphism pro! 🎉" : "Keep trying, hero! 💪");
-            scoreElement.style.display = "block";
-
-            if (score === 5) {
-                celebrationSound.play();
-                createSparkles();
-                setTimeout(() => {
-                    document.getElementById('sparkles').style.display = 'none';
-                }, 3000);
-            }
-        }
-    </script>
-</body>
-</html>
+  
+    <div class="question">
+      <p>2. In __________ polymorphism, the method call is determined during execution.</p>
+      <input type="text" [(ngModel)]="userAnswers[1]" placeholder="Enter your answer here" />
+    </div>
+  
+    <div class="question">
+      <p>3. ___________ overloading is a form of static polymorphism.</p>
+      <input type="text" [(ngModel)]="userAnswers[2]" placeholder="Enter your answer here" />
+    </div>
+  
+    <div class="question">
+      <p>4. Dynamic polymorphism is also known as __________ binding.</p>
+      <input type="text" [(ngModel)]="userAnswers[3]" placeholder="Enter your answer here" />
+    </div>
+  
+    <div class="question">
+      <p>5. ____________ is the process of a subclass providing a specific implementation of a method already defined in its superclass.</p>
+      <input type="text" [(ngModel)]="userAnswers[4]" placeholder="Enter your answer here" />
+    </div>
+  
+    <button (click)="checkAnswers()">Submit Answers</button>
+    <p class="score" *ngIf="showScore">{{ scoreMessage }}</p>
+  
+    <div class="sparkles" *ngIf="showSparkles" id="sparkles">
+      <div *ngFor="let sparkle of sparkles" class="sparkle" [style.left]="sparkle.left" [style.top]="sparkle.top">
+        {{ sparkle.emoji }}
+      </div>
+    </div>
+  </div>
+  

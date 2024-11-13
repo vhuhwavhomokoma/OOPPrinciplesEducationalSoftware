@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff2cc;
+    background-color: #fff2cc!important;
     overflow: hidden;
   }
   
@@ -27,10 +27,6 @@ body {
     text-align: left;
   }
   
-  .question p {
-    font-size: 18px;
-  }
-  
   .score {
     margin-top: 20px;
     font-weight: bold;
@@ -51,7 +47,12 @@ body {
     background-color: #ff784e;
   }
   
-  /* Sparkle effect */
+  select {
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
   .sparkles {
     position: absolute;
     top: 0;
@@ -59,7 +60,6 @@ body {
     width: 100%;
     height: 100%;
     pointer-events: none;
-    z-index: 1;
   }
   
   .sparkle {
@@ -69,17 +69,8 @@ body {
   }
   
   @keyframes sparkle {
-    0% {
-      opacity: 1;
-      transform: translate(0, 0) scale(1);
-    }
-    50% {
-      opacity: 0.5;
-      transform: translate(30px, -30px) scale(1.5);
-    }
-    100% {
-      opacity: 0;
-      transform: translate(0, 0) scale(1);
-    }
+    0% { opacity: 1; transform: translate(0, 0) scale(1); }
+    50% { opacity: 0.5; transform: translate(30px, -30px) scale(1.5); }
+    100% { opacity: 0; transform: translate(0, 0) scale(1); }
   }
   
