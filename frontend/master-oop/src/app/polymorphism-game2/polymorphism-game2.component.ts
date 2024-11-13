@@ -1,70 +1,45 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-polymorphism-game2',
+  standalone: true,
+  imports: [FormsModule, CommonModule],  // Add CommonModule here
   templateUrl: './polymorphism-game2.component.html',
   styleUrls: ['./polymorphism-game2.component.scss']
 })
 export class PolymorphismGame2Component {
-  questions = [
-    { text: 'Static polymorphism is also known as early binding.', answer: 'Static', userAnswer: '' },
-    { text: 'In dynamic polymorphism, the method call is determined during execution.', answer: 'Dynamic', userAnswer: '' },
-    { text: 'Function overloading is a form of static polymorphism.', answer: 'Function', userAnswer: '' },
-    { text: 'Dynamic polymorphism is also known as late binding.', answer: 'late', userAnswer: '' },
-    { text: 'Method overriding is the process of a subclass providing a specific implementation of a method already defined in its superclass.', answer: 'Method Overriding', userAnswer: '' }
-  ];
-  
-  score = 0;
-  scoreMessage = '';
-  scoreVisible = false;
-
-  constructor(private router:Router){}
-  next(){
-    this.router.navigate(['/polymorphism-activity-two']);
-  }
+  userAnswers: string[] = ['', '', '', '', ''];
+  correctAnswers: string[] = ["Static", "Dynamic", "Function", "late", "Method Overriding"];
+  scoreMessage: string = '';
+  showScore: boolean = false;
+  showSparkles: boolean = false;
+  sparkles: Array<{ emoji: string, left: string, top: string }> = [];
 
   checkAnswers() {
-    this.score = this.questions.reduce((acc, question) => {
-      return acc + (question.userAnswer.trim().toLowerCase() === question.answer.toLowerCase() ? 1 : 0);
-    }, 0);
+    let score = 0;
+    this.userAnswers.forEach((answer, index) => {
+      if (answer.trim().toLowerCase() === this.correctAnswers[index].toLowerCase()) {
+        score++;
+      }
+    });
+    this.scoreMessage = `Score: ${score}/5 - ` + (score === 5 ? "You’re a polymorphism pro! 🎉" : "Keep trying, hero! 💪");
+    this.showScore = true;
 
-    this.scoreMessage = `Score: ${this.score}/5 - ` + (this.score === 5 ? "You’re a polymorphism pro! 🎉" : "Keep trying, hero! 💪");
-    this.scoreVisible = true;
-
-    // Play sounds and show sparkles if all answers are correct
-    if (this.score === 5) {
-      this.playSound('celebrationSound');
+    if (score === 5) {
+      this.showSparkles = true;
       this.createSparkles();
+      setTimeout(() => (this.showSparkles = false), 3000);
     }
-  }
-
-  playSound(soundId: string) {
-    const sound = document.getElementById(soundId) as HTMLAudioElement;
-    sound?.play();
   }
 
   createSparkles() {
-    const sparkleContainer = document.getElementById('sparkles');
-    if (!sparkleContainer) return;
-
-    sparkleContainer.innerHTML = '';
-    sparkleContainer.style.display = 'block';
-
-    const emojis = ["⭐️", "👏"];
-    for (let i = 0; i < 30; i++) {
-      const sparkle = document.createElement('div');
-      sparkle.classList.add('sparkle');
-      sparkle.style.left = `${Math.random() * 100}%`;
-      sparkle.style.top = `${Math.random() * 100}%`;
-      sparkle.textContent = emojis[Math.floor(Math.random() * emojis.length)];
-      sparkle.style.color = i % 2 === 0 ? 'red' : 'green';
-      sparkle.style.animationDelay = `${Math.random() * 1.5}s`;
-      sparkleContainer.appendChild(sparkle);
-    }
-
-    setTimeout(() => {
-      sparkleContainer.style.display = 'none';
-    }, 3000);
+    this.sparkles = Array.from({ length: 30 }, () => ({
+      emoji: Math.random() > 0.5 ? '⭐️' : '👏',
+      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * 100}%`
+    }));
   }
 }
