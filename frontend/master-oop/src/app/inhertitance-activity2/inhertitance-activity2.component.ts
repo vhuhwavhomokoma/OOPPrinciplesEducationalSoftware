@@ -17,6 +17,7 @@ interface ImageType {
 export class InhertitanceActivity2Component {
   TotalMarks:number = 0; //Tally of total marks for activity
   isVisible = false;
+  showNextButton: boolean = false;
   imageTypes: ImageType[] = [
     { imageUrl: 'assets/multi.png', type: 'Multilevel' },
     { imageUrl: 'assets/hierarchy.png', type: 'Hierarchical' },
@@ -55,6 +56,7 @@ export class InhertitanceActivity2Component {
 
   marks(){
     this.isVisible = true;
+    this.showNextButton = true; 
   }
   
   

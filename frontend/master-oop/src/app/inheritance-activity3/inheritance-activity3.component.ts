@@ -17,6 +17,7 @@ import { Router } from '@angular/router';
 export class InheritanceActivity3Component {
   TotalMarks:number = 0; //Tally of total marks for activity
   isVisible = false;
+  showNextButton: boolean = false; 
   inputText: string = '';
   inputChild1: string = '';
   inputChild2: string = '';
@@ -39,6 +40,7 @@ export class InheritanceActivity3Component {
 
   marks(){
     this.isVisible = true;
+    this.showNextButton = true;
   }
   
   isParentMatching(): boolean {

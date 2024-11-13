@@ -16,4 +16,9 @@ export class ClassObjectUmlComponent {
   next(){
     this.router.navigate(['/classes_online_game1']);
   }
+
+  back(){
+    this.router.navigate(['/home']);
+  }
+
 }

@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-polymorphism-game1',
@@ -12,6 +13,12 @@ export class PolymorphismGame1Component {
   score: number | null = null;
   showSparkles = false;
   correctAnswers = ["True", "False", "True", "False", "True"];
+
+
+  constructor(private router:Router){}
+  next(){
+    this.router.navigate(['/polymorphism-activity-one']);
+  }
 
   checkAnswers() {
     let score = 0;

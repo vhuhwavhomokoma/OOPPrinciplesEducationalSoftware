@@ -24,6 +24,7 @@ interface Question {
 export class InhertitanceActivity1Component {
   TotalMarks:number = 0; //Tally of total marks for activity
   isVisible = false;
+  showNextButton: boolean = false; 
   questions: Question[] = [
     {
       text: 'What is inheritance?',
@@ -71,6 +72,7 @@ export class InhertitanceActivity1Component {
 
   marks(){
     this.isVisible = true;
+    this.showNextButton = true; 
   }
   
   

@@ -29,7 +29,7 @@ checkAnswers(): void {
 
   constructor(private router:Router){}
   next(){
-    this.router.navigate(['/relationships-page-three']);
+    this.router.navigate(['/relationships-offline']);
   }
 
 

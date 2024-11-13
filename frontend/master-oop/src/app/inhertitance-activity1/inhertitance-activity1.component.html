@@ -11,7 +11,7 @@
         <div *ngFor="let question of questions; let qIndex = index">
             <h3>{{ question.text }}</h3>
             <div *ngFor="let option of question.options; let oIndex = index">
-              <button 
+              <button class="MutipleChoice"
                 [ngClass]="{'correct': question.selectedIndex === oIndex && option.isCorrect, 'incorrect': question.selectedIndex === oIndex && !option.isCorrect}"
                 (click)="selectOption(qIndex, oIndex)"
                 [disabled]="question.selectedIndex !== null">
@@ -33,7 +33,7 @@
               <h3 *ngIf="isVisible" class="total-marks">{{ TotalMarks }}</h3>
             </div>
             
-            <button class="btn bg-orange-500 text-black hover:bg-orange-600 border-orange-500 hover:border-orange-600 focus:outline-none mg-bottom" (click)="next()">
+            <button *ngIf="showNextButton" class="btn bg-orange-500 text-black hover:bg-orange-600 border-orange-500 hover:border-orange-600 focus:outline-none mg-bottom" (click)="next()">
               Next
             </button>
           </div>

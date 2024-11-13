@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-polymorphism-game2',
@@ -17,6 +18,11 @@ export class PolymorphismGame2Component {
   score = 0;
   scoreMessage = '';
   scoreVisible = false;
+
+  constructor(private router:Router){}
+  next(){
+    this.router.navigate(['/polymorphism-activity-two']);
+  }
 
   checkAnswers() {
     this.score = this.questions.reduce((acc, question) => {

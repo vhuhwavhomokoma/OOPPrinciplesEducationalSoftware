@@ -61,7 +61,7 @@
     <h3 *ngIf="isVisible" class="total-marks">{{ TotalMarks }}</h3>
   </div>
   
-  <button class="btn bg-orange-500 text-black hover:bg-orange-600 border-orange-500 hover:border-orange-600 focus:outline-none mg-bottom" (click)="next()">
+  <button *ngIf="showNextButton" class="btn bg-orange-500 text-black hover:bg-orange-600 border-orange-500 hover:border-orange-600 focus:outline-none mg-bottom" (click)="next()">
     Next
   </button>
 </div>

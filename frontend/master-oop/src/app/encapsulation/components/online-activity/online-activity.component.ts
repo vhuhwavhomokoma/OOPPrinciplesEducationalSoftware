@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { CdkDragDrop, DragDropModule } from '@angular/cdk/drag-drop';
 import { CommonModule } from '@angular/common';
-import { CdkDrag, CdkDragDrop, DragDropModule, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
+import { Component, OnInit } from '@angular/core';
 
 // Define the allowed keys as a union type
 type PlaceholderKey = 'accessModifier' | 'balanceField' | 'nameField' | 'getter' | 'setter';

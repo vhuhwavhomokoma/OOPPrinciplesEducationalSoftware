@@ -9,11 +9,8 @@ import { Router } from '@angular/router';
 })
 export class PolymorphismActivityThreeComponent {
   constructor(private router:Router){}
-  next(){
-    this.router.navigate(['polymorphism-drag-drop-game']);
-  }
 
   back(){
-    this.router.navigate(['/polymorphism-activity-one']);
+    this.router.navigate(['/home']);
   }
 }

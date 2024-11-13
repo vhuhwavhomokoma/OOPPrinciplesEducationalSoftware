@@ -20,7 +20,7 @@ html{
     font-style: normal;
 }
 
-button {
+.MutipleChoice {
     margin: 5px;
     padding: 10px;
     font-size: 16px;
@@ -53,4 +53,11 @@ button {
   .total-marks {
     margin-left: 10px;
     font-weight: bold;
+  }
+
+  .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
   }

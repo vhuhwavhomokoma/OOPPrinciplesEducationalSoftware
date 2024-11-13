@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-relationships-offline',
@@ -8,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./relationships-offline.component.scss']
 })
 export class RelationshipsOfflineComponent {
+  constructor(private router:Router){}
 
+  next(){
+    this.router.navigate(['/relationships-page-three']);
+  }
 }

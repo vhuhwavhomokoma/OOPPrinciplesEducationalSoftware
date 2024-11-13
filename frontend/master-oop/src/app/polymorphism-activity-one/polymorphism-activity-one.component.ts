@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 export class PolymorphismActivityOneComponent {
   constructor(private router:Router){}
   next(){
-    this.router.navigate(['/polymorphism-activity-two']);
+    this.router.navigate(['/polymorphism-game2']);
   }
 
   back(){

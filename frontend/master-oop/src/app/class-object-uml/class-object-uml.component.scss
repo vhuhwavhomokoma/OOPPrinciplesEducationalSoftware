@@ -2,5 +2,10 @@ html{
     background-color: #D2C8EC !important;
 }
 
-
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
 

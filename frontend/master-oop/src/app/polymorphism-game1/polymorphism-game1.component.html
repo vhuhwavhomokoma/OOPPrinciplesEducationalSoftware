@@ -32,6 +32,10 @@
     <p class="score" *ngIf="score !== null">
       Score: {{ score }}/5 - {{ score === 5 ? "You’re a polymorphism pro! 🎉" : "Keep trying! 💪" }}
     </p>
+
+    <button class="btn bg-orange-500 text-black hover:bg-orange-600 border-orange-500 hover:border-orange-600 focus:outline-none mg-bottom" (click)="next()">
+      Next
+    </button>
   </div>
   <div class="sparkles" id="sparkles" *ngIf="showSparkles"></div>
   
