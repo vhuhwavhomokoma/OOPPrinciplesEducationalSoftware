@@ -1,5 +1,6 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, viewChild, ViewEncapsulation, ElementRef  } from '@angular/core';
 import { Router } from '@angular/router';
+import { OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-class-object-uml',
@@ -12,6 +13,13 @@ import { Router } from '@angular/router';
 export class ClassObjectUmlComponent {
 
   constructor(private router:Router){}
+
+  ngOnInit(): void {
+    const modal = document.getElementById('my_modal_1') as HTMLDialogElement;
+
+    // Show the modal
+    modal.showModal();
+  }
 
   next(){
     this.router.navigate(['/classes_online_game1']);
